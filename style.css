@@ -704,3 +704,13 @@ img{
 .token-note{
   margin-top:26px;
 }
+/* SMALL PAGE HELPERS */
+.insight-card strong{
+  color:var(--gold-soft);
+}
+
+@media (max-width: 760px){
+  .insight-card{
+    padding:24px 20px;
+  }
+}
