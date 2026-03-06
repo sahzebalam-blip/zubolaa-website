@@ -907,3 +907,58 @@ body::after{
   margin-bottom:18px;
   letter-spacing:-0.04em;
 }
+.program-card{
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity:.9;
+}
+
+.program-card h3{
+  font-size:40px;
+  color:var(--gold-soft);
+  margin-bottom:16px;
+}
+
+.program-copy{
+  color:var(--muted);
+  font-size:17px;
+  margin-bottom:18px;
+}
+
+.program-card ul{
+  list-style:none;
+  display:grid;
+  gap:10px;
+  margin-top:10px;
+}
+
+.program-card li{
+  position:relative;
+  padding-left:18px;
+}
+
+.program-card li::before{
+  content:"•";
+  position:absolute;
+  left:0;
+  color:var(--gold);
+}
+
+.featured{
+  transform:translateY(-8px);
+  border-color:rgba(214,174,59,0.55);
+  box-shadow:
+    0 28px 80px rgba(0,0,0,0.45),
+    0 0 32px rgba(214,174,59,0.14);
+}
