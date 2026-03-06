@@ -100,9 +100,13 @@ img{
   overflow:hidden;
 }
 
-.brand-mark.small{
-  width:48px;
-  height:48px;
+.brand-mark{
+  width:64px;
+  height:64px;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  padding:0;
 }
 
 .brand-mark img{
