@@ -840,3 +840,36 @@ body::after{
   from{ transform:translateY(0px); }
   to{ transform:translateY(-12px); }
 }
+/* BLOOMBERG STYLE TICKER */
+.ticker-section{
+  padding-top:40px;
+}
+
+.ticker-wrap{
+  overflow:hidden;
+  border:1px solid rgba(214,174,59,0.22);
+  border-radius:18px;
+  background:linear-gradient(180deg, rgba(12,18,38,0.92), rgba(8,12,24,0.96));
+  box-shadow:var(--shadow);
+}
+
+.ticker-track{
+  display:flex;
+  gap:50px;
+  white-space:nowrap;
+  width:max-content;
+  padding:18px 0;
+  animation:tickerMove 28s linear infinite;
+}
+
+.ticker-track span{
+  font-family:'Space Grotesk', Arial, sans-serif;
+  font-size:18px;
+  font-weight:700;
+  color:#f0cf71;
+}
+
+@keyframes tickerMove{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
