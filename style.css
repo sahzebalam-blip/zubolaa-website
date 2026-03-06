@@ -735,7 +735,107 @@ body::after{
   opacity:0.65;
   z-index:0;
 }
+/* 3D COSMIC HERO */
+.cosmic-3d{
+  position:relative;
+  width:420px;
+  height:420px;
+  margin:50px auto 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 
+.planet-core{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, #f5d87e, #d6ae3b 55%, #7c3aed 100%);
+  box-shadow:
+    0 0 40px rgba(214,174,59,0.45),
+    0 0 80px rgba(124,58,237,0.25);
+  animation: pulseCore 4s ease-in-out infinite;
+  position:relative;
+  z-index:3;
+}
+
+.orbit{
+  position:absolute;
+  border:1px solid rgba(214,174,59,0.22);
+  border-radius:50%;
+  transform-style:preserve-3d;
+}
+
+.orbit-one{
+  width:280px;
+  height:280px;
+  transform:rotateX(68deg) rotateZ(10deg);
+}
+.orbit-two{
+  width:360px;
+  height:360px;
+  border-color:rgba(124,58,237,0.20);
+  transform:rotateX(72deg) rotateZ(-18deg);
+}
+.orbit-three{
+  width:220px;
+  height:220px;
+  border-color:rgba(255,255,255,0.16);
+  transform:rotateX(62deg) rotateZ(25deg);
+}
+
+.floating-node{
+  position:absolute;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  z-index:4;
+}
+
+.node-one{
+  background:#f0cf71;
+  box-shadow:0 0 16px rgba(214,174,59,0.6);
+  animation: orbitA 8s linear infinite;
+}
+.node-two{
+  background:#a855f7;
+  box-shadow:0 0 16px rgba(168,85,247,0.5);
+  animation: orbitB 10s linear infinite;
+}
+.node-three{
+  background:#ffffff;
+  box-shadow:0 0 14px rgba(255,255,255,0.5);
+  animation: orbitC 6s linear infinite;
+}
+
+@keyframes orbitA{
+  from{ transform:rotate(0deg) translateX(140px) rotate(0deg); }
+  to{ transform:rotate(360deg) translateX(140px) rotate(-360deg); }
+}
+@keyframes orbitB{
+  from{ transform:rotate(120deg) translateX(180px) rotate(-120deg); }
+  to{ transform:rotate(480deg) translateX(180px) rotate(-480deg); }
+}
+@keyframes orbitC{
+  from{ transform:rotate(240deg) translateX(110px) rotate(-240deg); }
+  to{ transform:rotate(600deg) translateX(110px) rotate(-600deg); }
+}
+
+@keyframes pulseCore{
+  0%,100%{ transform:scale(1); }
+  50%{ transform:scale(1.08); }
+}
+
+@media (max-width:760px){
+  .cosmic-3d{
+    width:300px;
+    height:300px;
+  }
+  .orbit-one{ width:200px; height:200px; }
+  .orbit-two{ width:260px; height:260px; }
+  .orbit-three{ width:150px; height:150px; }
+  .planet-core{ width:82px; height:82px; }
+}
 @keyframes starFloat{
   from{ transform:translateY(0px); }
   to{ transform:translateY(-12px); }
