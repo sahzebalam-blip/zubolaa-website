@@ -962,3 +962,14 @@ body::after{
     0 28px 80px rgba(0,0,0,0.45),
     0 0 32px rgba(214,174,59,0.14);
 }
+body{
+  font-family:'Inter', Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,
+.main-nav a,
+.nav-cta,
+.btn,
+.brand-text{
+  font-family:'Space Grotesk', Arial, sans-serif;
+}
