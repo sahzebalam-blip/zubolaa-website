@@ -549,7 +549,9 @@ img{
   .main-nav a{
     font-size:16px;
   }
-
+.card-grid.two{
+  grid-template-columns:repeat(2,1fr);
+}
   .card-grid.three{
     grid-template-columns:repeat(2,1fr);
   }
