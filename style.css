@@ -716,3 +716,27 @@ img{
     padding:24px 20px;
   }
 }
+/* COSMIC STAR BACKGROUND */
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255,255,255,0.85) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 78% 22%, rgba(214,174,59,0.9) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 32% 68%, rgba(255,255,255,0.75) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 88% 72%, rgba(124,58,237,0.75) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 52% 38%, rgba(214,174,59,0.85) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 18% 82%, rgba(255,255,255,0.7) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 64% 84%, rgba(255,255,255,0.7) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 92% 10%, rgba(255,255,255,0.6) 0 1px, transparent 1.5px);
+  animation: starFloat 10s linear infinite alternate;
+  opacity:0.65;
+  z-index:0;
+}
+
+@keyframes starFloat{
+  from{ transform:translateY(0px); }
+  to{ transform:translateY(-12px); }
+}
