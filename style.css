@@ -686,3 +686,21 @@ img{
     grid-template-columns:1fr;
   }
 }
+/* SERVICES + TOKEN SMALL HELPERS */
+.glass-card ul{
+  margin-top:10px;
+  padding-left:18px;
+}
+
+.glass-card ul li{
+  margin-bottom:10px;
+}
+
+.program-copy{
+  color:var(--muted);
+  font-size:18px;
+}
+
+.token-note{
+  margin-top:26px;
+}
