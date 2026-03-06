@@ -624,3 +624,65 @@ img{
     gap:28px;
   }
 }
+/* PAGE HERO */
+.page-hero{
+  min-height:60vh;
+}
+
+.page-title{
+  font-size:84px;
+}
+
+/* TWO COLUMN GRID */
+.card-grid.two{
+  grid-template-columns:repeat(2,1fr);
+}
+
+/* PROGRAM TEXT */
+.program-copy{
+  margin-bottom:18px;
+}
+
+/* TABLE */
+.table-card{
+  overflow-x:auto;
+}
+
+.comparison-table{
+  min-width:900px;
+}
+
+.table-row{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;
+  border-bottom:1px solid rgba(214,174,59,0.12);
+}
+
+.table-row:last-child{
+  border-bottom:none;
+}
+
+.table-row > div{
+  padding:18px 14px;
+  color:var(--muted);
+  font-size:17px;
+}
+
+.table-head > div{
+  color:var(--gold-soft);
+  font-weight:800;
+}
+
+.table-row > div:not(:first-child){
+  text-align:center;
+}
+
+@media (max-width: 760px){
+  .page-title{
+    font-size:52px;
+  }
+
+  .card-grid.two{
+    grid-template-columns:1fr;
+  }
+}
