@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourusername.github.io/zubolaa-website/sitemap.xml
+Sitemap: https://sahzebalam-blip.github.io/zubolaa-website/sitemap.xml
