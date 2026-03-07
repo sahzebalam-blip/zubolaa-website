@@ -977,3 +977,19 @@ h1,h2,h3,h4,h5,h6,
 .brand-text{
   font-family:'Space Grotesk', Arial, sans-serif;
 }
+.hero-title{
+  font-size:140px;
+  line-height:0.95;
+  font-weight:900;
+  letter-spacing:-0.05em;
+
+  background:linear-gradient(180deg,#f7df94 0%, #d6ae3b 70%, #b57f19 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  text-shadow:0 0 30px rgba(214,174,59,0.18);
+}@media(max-width:900px){
+.hero-title{
+font-size:70px;
+}
+}
