@@ -1,39 +1,9 @@
-</body>
-...
-<script src="script.js"></script>
-
-<script src="https://s3.tradingview.com/tv.js"></script>
-
-<script>
-  if (document.getElementById("tradingview_chart")) {
-    new TradingView.widget({
-      "container_id": "tradingview_chart",
-      "autosize": true,
-      "symbol": "OANDA:XAUUSD",
-      "interval": "60",
-      "timezone": "Asia/Kolkata",
-      "theme": "dark",
-      "style": "1",
-      "locale": "en",
-      "toolbar_bg": "#050816",
-      "enable_publishing": false,
-      "hide_top_toolbar": false,
-      "hide_legend": false,
-      "save_image": false,
-      "backgroundColor": "#050816",
-      "gridColor": "rgba(214,174,59,0.08)"
-    });
-  }
-</script>
-
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.ico">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,30 +26,21 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="brand">
+      <a href="index.html" class="brand" aria-label="Zubolaa Home">
         <div class="brand-mark">
           <img src="assets/zubolaa-logo.png" alt="Zubolaa Logo" />
         </div>
-        <div class="brand-text">Zubolaa</div>
       </a>
 
       <nav class="main-nav">
-
-<a href="index.html">Home</a>
-
-<a href="about.html">About</a>
-
-<a href="academy.html">Academy</a>
-
-<a href="services.html">Services</a>
-
-<a href="token.html">Token</a>
-
-<a href="insights.html">Insights</a>
-
-<a href="contact.html">Contact</a>
-
-</nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academy.html">Academy</a>
+        <a href="services.html">Services</a>
+        <a href="token.html">Token</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
       <a href="academy.html" class="nav-cta">Join Ecosystem</a>
     </div>
@@ -93,16 +54,15 @@
       <div class="hero-glow hero-glow-right"></div>
 
       <div class="cosmic-3d">
-  <div class="orbit orbit-one"></div>
-  <div class="orbit orbit-two"></div>
-  <div class="orbit orbit-three"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="planet-core"></div>
+        <div class="floating-node node-one"></div>
+        <div class="floating-node node-two"></div>
+        <div class="floating-node node-three"></div>
+      </div>
 
-  <div class="planet-core"></div>
-
-  <div class="floating-node node-one"></div>
-  <div class="floating-node node-two"></div>
-  <div class="floating-node node-three"></div>
-</div>
       <div class="container hero-content">
         <div class="hero-badge">
           <span>🚀</span>
@@ -126,32 +86,34 @@
         <div class="hero-shape hero-shape-right"></div>
       </div>
     </section>
+
+    <!-- LIVE MARKET STRIP -->
     <section class="section ticker-section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Live Market Strip</h2>
-      <p>Bloomberg-style live market display for quick ecosystem context.</p>
-    </div>
+      <div class="container">
+        <div class="section-head">
+          <h2>Live Market Strip</h2>
+          <p>Bloomberg-style live market display for quick ecosystem context.</p>
+        </div>
 
-    <div class="ticker-wrap">
-      <div class="ticker-track">
-        <span>BTC/USD 67,420 ▲ 1.84%</span>
-        <span>ETH/USD 3,420 ▲ 2.11%</span>
-        <span>XAU/USD 2,045 ▲ 0.62%</span>
-        <span>EUR/USD 1.084 ▲ 0.14%</span>
-        <span>GBP/USD 1.271 ▼ 0.09%</span>
-        <span>NASDAQ 18,240 ▲ 0.71%</span>
+        <div class="ticker-wrap">
+          <div class="ticker-track">
+            <span>BTC/USD 67,420 ▲ 1.84%</span>
+            <span>ETH/USD 3,420 ▲ 2.11%</span>
+            <span>XAU/USD 2,045 ▲ 0.62%</span>
+            <span>EUR/USD 1.084 ▲ 0.14%</span>
+            <span>GBP/USD 1.271 ▼ 0.09%</span>
+            <span>NASDAQ 18,240 ▲ 0.71%</span>
 
-        <span>BTC/USD 67,420 ▲ 1.84%</span>
-        <span>ETH/USD 3,420 ▲ 2.11%</span>
-        <span>XAU/USD 2,045 ▲ 0.62%</span>
-        <span>EUR/USD 1.084 ▲ 0.14%</span>
-        <span>GBP/USD 1.271 ▼ 0.09%</span>
-        <span>NASDAQ 18,240 ▲ 0.71%</span>
+            <span>BTC/USD 67,420 ▲ 1.84%</span>
+            <span>ETH/USD 3,420 ▲ 2.11%</span>
+            <span>XAU/USD 2,045 ▲ 0.62%</span>
+            <span>EUR/USD 1.084 ▲ 0.14%</span>
+            <span>GBP/USD 1.271 ▼ 0.09%</span>
+            <span>NASDAQ 18,240 ▲ 0.71%</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- WHAT IS ZUBOLAA -->
     <section class="section">
@@ -307,34 +269,37 @@
         </div>
       </div>
     </section>
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <h2>Live TradingView Chart</h2>
-      <p>Interactive charting layer for market observation and educational reference.</p>
-    </div>
 
-    <div class="chart-card">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "autosize": true,
-          "symbol": "OANDA:XAUUSD",
-          "interval": "60",
-          "timezone": "Asia/Kolkata",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "allow_symbol_change": true,
-          "backgroundColor": "#050816",
-          "gridColor": "rgba(214,174,59,0.08)"
-        }
-        </script>
+    <!-- LIVE TRADINGVIEW CHART -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Live TradingView Chart</h2>
+          <p>Interactive charting layer for market observation and educational reference.</p>
+        </div>
+
+        <div class="chart-card">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+              "autosize": true,
+              "symbol": "OANDA:XAUUSD",
+              "interval": "60",
+              "timezone": "Asia/Kolkata",
+              "theme": "dark",
+              "style": "1",
+              "locale": "en",
+              "allow_symbol_change": true,
+              "backgroundColor": "#050816",
+              "gridColor": "rgba(214,174,59,0.08)"
+            }
+            </script>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
     <!-- TOKEN PREVIEW -->
     <section class="section section-alt">
       <div class="container">
@@ -368,15 +333,7 @@
         </div>
       </div>
     </section>
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <h2>Live TradingView Chart</h2>
-      <p>Interactive charting layer for market observation and educational reference.</p>
-    </div>
 
-    <div class="chart-card">
-      
     <!-- INSIGHTS PREVIEW -->
     <section class="section">
       <div class="container">
