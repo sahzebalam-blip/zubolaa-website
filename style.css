@@ -993,3 +993,235 @@ h1,h2,h3,h4,h5,h6,
 font-size:70px;
 }
 }
+/* ===== ACADEMY FINAL PREMIUM SECTION ===== */
+
+body{
+  font-family:'Inter', Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,
+.main-nav a,
+.nav-cta,
+.btn,
+.brand-text,
+.footer-brand h3,
+.hero-title,
+.hero-kicker,
+.hero-subtitle,
+.hero-quote{
+  font-family:'Space Grotesk', Arial, Helvetica, sans-serif;
+}
+
+.academy-pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:28px;
+}
+
+.academy-pricing-card{
+  position:relative;
+  overflow:hidden;
+  min-height:480px;
+  padding:34px 28px;
+  border-radius:28px;
+  border:1px solid rgba(214,174,59,0.22);
+  background:
+    linear-gradient(180deg, rgba(23,30,58,0.92), rgba(10,14,27,0.96));
+  box-shadow:
+    0 18px 48px rgba(0,0,0,0.42),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  transition:.32s ease;
+}
+
+.academy-pricing-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.academy-pricing-card::after{
+  content:"";
+  position:absolute;
+  top:-42px;
+  right:-42px;
+  width:140px;
+  height:140px;
+  background:radial-gradient(circle, rgba(214,174,59,0.12), transparent 70%);
+  pointer-events:none;
+}
+
+.academy-pricing-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(214,174,59,0.44);
+  box-shadow:
+    0 26px 70px rgba(0,0,0,0.48),
+    0 0 30px rgba(214,174,59,0.10);
+}
+
+.academy-pricing-card.featured{
+  transform:translateY(-8px);
+  border-color:rgba(214,174,59,0.56);
+  box-shadow:
+    0 28px 80px rgba(0,0,0,0.48),
+    0 0 34px rgba(214,174,59,0.14);
+}
+
+.academy-pricing-card .badge{
+  position:absolute;
+  top:16px;
+  right:16px;
+  background:linear-gradient(180deg,#f0cf71,#d6ae3b);
+  color:#0b0f1b;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  padding:8px 12px;
+  border-radius:999px;
+}
+
+.academy-pricing-card h3{
+  font-size:30px;
+  line-height:1.15;
+  margin-bottom:14px;
+}
+
+.academy-price{
+  font-size:44px;
+  line-height:1;
+  font-weight:900;
+  color:var(--gold-soft);
+  margin-bottom:10px;
+}
+
+.academy-price.academy-price-text{
+  font-size:38px;
+}
+
+.academy-price-note{
+  color:var(--muted);
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  margin-bottom:16px;
+}
+
+.academy-intro{
+  color:var(--muted);
+  font-size:17px;
+  margin-bottom:18px;
+}
+
+.academy-mini-points{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:18px;
+}
+
+.academy-mini-points span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(214,174,59,0.08);
+  border:1px solid rgba(214,174,59,0.16);
+  color:var(--gold-soft);
+  font-size:13px;
+  font-weight:700;
+}
+
+.module-toggle{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:4px;
+  padding:12px 18px;
+  border-radius:10px;
+  border:1px solid rgba(214,174,59,0.35);
+  background:rgba(214,174,59,0.08);
+  color:var(--gold-soft);
+  font-family:'Space Grotesk', Arial, sans-serif;
+  font-weight:700;
+  cursor:pointer;
+  transition:.25s ease;
+}
+
+.module-toggle:hover{
+  background:rgba(214,174,59,0.14);
+  border-color:rgba(214,174,59,0.55);
+}
+
+.module-panel{
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  margin-top:0;
+  transition:max-height .35s ease, margin-top .35s ease, opacity .35s ease;
+}
+
+.module-panel.open{
+  max-height:720px;
+  opacity:1;
+  margin-top:22px;
+}
+
+.module-panel h4{
+  font-size:16px;
+  color:var(--gold-soft);
+  margin-bottom:10px;
+  margin-top:12px;
+}
+
+.module-panel ul{
+  list-style:none;
+  padding-left:0;
+  margin-bottom:14px;
+}
+
+.module-panel li{
+  position:relative;
+  padding-left:18px;
+  margin-bottom:10px;
+  color:var(--muted);
+}
+
+.module-panel li::before{
+  content:"•";
+  position:absolute;
+  left:0;
+  color:var(--gold);
+  font-weight:900;
+}
+
+.module-panel p{
+  color:var(--muted);
+  font-size:16px;
+}
+
+@media (max-width: 1180px){
+  .academy-pricing-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width: 760px){
+  .academy-pricing-grid{
+    grid-template-columns:1fr;
+  }
+
+  .academy-pricing-card,
+  .academy-pricing-card.featured{
+    transform:none;
+    min-height:auto;
+  }
+
+  .academy-price{
+    font-size:38px;
+  }
+}
