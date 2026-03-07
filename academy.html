@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Zubolaa Academy | Structured Trading Education</title>
-  <meta name="description" content="Zubolaa Academy offers structured trading education from foundation to elite level, including customized learning tracks based on user capability, psychology, and technical assessment." />
+  <meta name="description" content="Zubolaa Academy offers structured trading education from foundation to advanced learning paths, including customized programs based on user capability, psychology, and technical assessment." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://zubolaa.com/academy.html" />
 
-  <meta property="og:title" content="Zubolaa Academy" />
-  <meta property="og:description" content="Structured trading education designed to develop disciplined market participants." />
+  <meta property="og:title" content="Zubolaa Academy | Structured Trading Education" />
+  <meta property="og:description" content="Explore Foundation, Growth, Elite, and Customized learning paths inside Zubolaa Academy." />
   <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,6 +31,7 @@
       </a>
 
       <nav class="main-nav">
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="academy.html">Academy</a>
         <a href="services.html">Services</a>
@@ -35,11 +40,12 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a href="academy.html" class="nav-cta">Join Ecosystem</a>
+      <a href="contact.html" class="nav-cta">Join Ecosystem</a>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero page-hero">
       <div class="hero-grid"></div>
       <div class="hero-glow hero-glow-left"></div>
@@ -55,122 +61,130 @@
         <p class="hero-subtitle">Foundation • Growth • Elite • Customized Learning</p>
         <p class="hero-quote">
           Structured education designed to develop disciplined market participants
-          from foundation to elite level.
+          through clarity, process, and long-term strategic thinking.
         </p>
 
         <div class="hero-actions">
-          <a href="#programs" class="btn btn-primary">View Programs</a>
-          <a href="contact.html" class="btn btn-outline">Start Learning</a>
+          <a href="#academy-programs" class="btn btn-primary">View Programs</a>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
         </div>
       </div>
     </section>
 
+    <!-- OVERVIEW -->
     <section class="section">
       <div class="container">
         <div class="section-head">
           <h2>A Structured Learning Ecosystem</h2>
           <p>
-            Zubolaa Academy is designed for individuals who want to build market clarity,
-            disciplined execution, and long-term strategic understanding.
+            Zubolaa Academy is designed for individuals who want to build stronger market understanding,
+            disciplined execution habits, and a long-term strategic approach to financial learning.
           </p>
         </div>
 
         <div class="card-grid three">
           <div class="glass-card">
-            <div class="icon-box">📚</div>
+            <div class="icon-box">📘</div>
             <h3>Structured Learning</h3>
             <p>
-              Step-by-step educational pathways designed for progressive growth.
+              Step-by-step educational progression designed for clarity, consistency, and growth.
             </p>
           </div>
 
           <div class="glass-card">
-            <div class="icon-box">🧩</div>
+            <div class="icon-box">🧠</div>
+            <h3>Psychology & Discipline</h3>
+            <p>
+              Strong emphasis on risk awareness, emotional discipline, and execution mindset.
+            </p>
+          </div>
+
+          <div class="glass-card">
+            <div class="icon-box">📈</div>
             <h3>Strategic Frameworks</h3>
             <p>
-              Professional market concepts focused on structure, planning, and discipline.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">🎯</div>
-            <h3>Execution Discipline</h3>
-            <p>
-              Programs built around psychology, risk awareness, and consistency.
+              Program pathways built around structured analysis, planning, and market interpretation.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="programs" class="section section-alt">
+    <!-- PROGRAMS -->
+    <section id="academy-programs" class="section section-alt">
       <div class="container">
         <div class="section-head">
           <h2>Academy Programs</h2>
           <p>
-            Designed for progressive learning, structured execution, and long-term development.
+            Professional learning tracks designed for different stages of market development.
           </p>
         </div>
 
-        <div class="card-grid four">
-          <div class="glass-card program-card">
-            <span class="program-tag">Foundation Program</span>
-            <h3>$251</h3>
-            <p class="program-copy">
-              Designed for individuals beginning their journey into financial markets.
+        <div class="academy-pricing-grid">
+
+          <!-- FOUNDATION -->
+          <div class="academy-pricing-card">
+            <h3>Foundation</h3>
+            <div class="academy-price">$251</div>
+            <p class="academy-price-note">One-time access</p>
+            <p class="academy-intro">
+              Built for individuals starting their structured journey into financial markets.
             </p>
-            <ul>
-              <li>Market fundamentals</li>
-              <li>Risk management basics</li>
-              <li>Trading psychology introduction</li>
-              <li>Market structure overview</li>
-              <li>Execution discipline</li>
-            </ul>
+
+            <div class="academy-mini-points">
+              <span>Beginner Friendly</span>
+              <span>Structured Basics</span>
+              <span>Discipline Focused</span>
+            </div>
+
+            <button class="module-toggle" onclick="toggleModules('foundation-modules')">View Modules</button>
+
+            <div class="module-panel" id="foundation-modules">
+              <h4>Short Modules</h4>
+              <ul>
+                <li>Introduction to Financial Markets</li>
+                <li>Forex & Digital Asset Basics</li>
+                <li>Market Sessions & Liquidity</li>
+                <li>Chart Reading Fundamentals</li>
+                <li>Risk Management Basics</li>
+                <li>Trading Psychology Foundations</li>
+              </ul>
+
+              <h4>Learning Outcome</h4>
+              <p>
+                Build foundational market understanding, risk awareness, and disciplined execution habits.
+              </p>
+            </div>
           </div>
 
-          <div class="glass-card program-card featured">
-            <span class="program-tag">Growth Program</span>
-            <h3>$551</h3>
-            <p class="program-copy">
-              For learners who want deeper understanding of strategy and execution.
+          <!-- GROWTH -->
+          <div class="academy-pricing-card featured">
+            <span class="badge">Most Popular</span>
+            <h3>Growth Program</h3>
+            <div class="academy-price">$551</div>
+            <p class="academy-price-note">One-time access</p>
+            <p class="academy-intro">
+              Designed for learners building structured market understanding and execution clarity.
             </p>
-            <ul>
-              <li>Advanced market structure</li>
-              <li>Strategy frameworks</li>
-              <li>Multi-timeframe analysis</li>
-              <li>Trade planning models</li>
-              <li>Strategic risk management</li>
-            </ul>
-          </div>
 
-          <div class="glass-card program-card">
-            <span class="program-tag">Elite Program</span>
-            <h3>$1001</h3>
-            <p class="program-copy">
-              Designed for individuals seeking professional-level market frameworks.
-            </p>
-            <ul>
-              <li>Professional strategy systems</li>
-              <li>Advanced psychology frameworks</li>
-              <li>Capital preservation principles</li>
-              <li>Performance tracking</li>
-              <li>Advanced execution planning</li>
-            </ul>
-          </div>
+            <div class="academy-mini-points">
+              <span>Strategy Focused</span>
+              <span>Planning Systems</span>
+              <span>Execution Clarity</span>
+            </div>
 
-          <div class="glass-card program-card">
-            <span class="program-tag">Customized Program</span>
-            <h3>Tailored</h3>
-            <p class="program-copy">
-              A personalized learning structure designed according to user capability.
-            </p>
-            <ul>
-              <li>Pre-psychology evaluation</li>
-              <li>Technical knowledge assessment</li>
-              <li>Learning capability analysis</li>
-              <li>Customized learning pathway</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </
+            <button class="module-toggle" onclick="toggleModules('growth-modules')">View Modules</button>
+
+            <div class="module-panel" id="growth-modules">
+              <h4>Short Modules</h4>
+              <ul>
+                <li>Market Structure</li>
+                <li>Liquidity Zones</li>
+                <li>Price Action Frameworks</li>
+                <li>Multi-Timeframe Analysis</li>
+                <li>Trade Planning</li>
+                <li>Risk-to-Reward Logic</li>
+              </ul>
+
+              <h4>Learning Outcome</h4>
+              <
