@@ -11,9 +11,43 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="brand">
-        <img src="images/zubolaa-logo.png" alt="Zubolaa Logo" class="brand-logo" />
-        <span class="brand-text">Zubolaa</span>
+      <a href="index.html" class="brand" aria-label="Zubolaa Home">
+        <svg class="zubolaa-logo" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="goldGradAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f7e27c"/>
+              <stop offset="50%" stop-color="#d6ae3b"/>
+              <stop offset="100%" stop-color="#b88a1f"/>
+            </linearGradient>
+          </defs>
+
+          <polygon
+            points="50,10 90,30 90,80 50,100 10,80 10,30"
+            fill="none"
+            stroke="url(#goldGradAbout)"
+            stroke-width="5"
+          />
+
+          <path
+            d="M25 35 L70 35 L35 75 L75 75"
+            fill="none"
+            stroke="url(#goldGradAbout)"
+            stroke-width="7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <text
+            x="120"
+            y="75"
+            font-size="40"
+            font-family="Arial, Helvetica, sans-serif"
+            font-weight="700"
+            fill="url(#goldGradAbout)"
+          >
+            Zubolaa
+          </text>
+        </svg>
       </a>
 
       <nav class="main-nav">
@@ -145,28 +179,28 @@
       </p>
 
       <div class="card-grid four-col">
-        <div class="glass-card feature-card">
+        <div class="glass-card feature-card compact-card">
           <h3>Clarity</h3>
           <p>
             Strong outcomes begin with clear thinking, clear communication, and clear direction.
           </p>
         </div>
 
-        <div class="glass-card feature-card">
+        <div class="glass-card feature-card compact-card">
           <h3>Discipline</h3>
           <p>
             Lasting progress is built through consistency, patience, and responsible execution.
           </p>
         </div>
 
-        <div class="glass-card feature-card">
+        <div class="glass-card feature-card compact-card">
           <h3>Structure</h3>
           <p>
             Random effort creates noise. Structured effort creates measurable progress.
           </p>
         </div>
 
-        <div class="glass-card feature-card">
+        <div class="glass-card feature-card compact-card">
           <h3>Evolution</h3>
           <p>
             Zubolaa is designed to adapt, expand, and grow as a future-ready ecosystem.
@@ -200,10 +234,45 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <div class="footer-brand-top">
-          <img src="images/zubolaa-logo.png" alt="Zubolaa Logo" class="footer-logo" />
-          <h3>Zubolaa</h3>
-        </div>
+        <a href="index.html" class="brand footer-brand-link">
+          <svg class="zubolaa-logo footer-svg-logo" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="goldGradFooterAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7e27c"/>
+                <stop offset="50%" stop-color="#d6ae3b"/>
+                <stop offset="100%" stop-color="#b88a1f"/>
+              </linearGradient>
+            </defs>
+
+            <polygon
+              points="50,10 90,30 90,80 50,100 10,80 10,30"
+              fill="none"
+              stroke="url(#goldGradFooterAbout)"
+              stroke-width="5"
+            />
+
+            <path
+              d="M25 35 L70 35 L35 75 L75 75"
+              fill="none"
+              stroke="url(#goldGradFooterAbout)"
+              stroke-width="7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <text
+              x="120"
+              y="75"
+              font-size="40"
+              font-family="Arial, Helvetica, sans-serif"
+              font-weight="700"
+              fill="url(#goldGradFooterAbout)"
+            >
+              Zubolaa
+            </text>
+          </svg>
+        </a>
+
         <p>
           Building financial intelligence through education, strategy,
           and digital infrastructure.
@@ -225,8 +294,8 @@
         <h4>Legal</h4>
         <ul>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">Disclaimer</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
