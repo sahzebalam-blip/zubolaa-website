@@ -3,52 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Zubolaa | Fintech Ecosystem for Financial Education, Strategy & Digital Growth</title>
-  <meta name="description" content="Zubolaa is a modern fintech ecosystem built around financial education, psychology-driven growth, strategic frameworks, digital services, and future-ready platform development." />
-  <meta name="keywords" content="Zubolaa, fintech ecosystem, financial education, trading academy, digital services, website development, strategy, token ecosystem, digital growth" />
-  <meta name="author" content="Zubolaa" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://zubolaa.com/" />
-
-  <meta property="og:title" content="Zubolaa | Fintech Ecosystem for Financial Education, Strategy & Digital Growth" />
-  <meta property="og:description" content="A psychology-driven fintech ecosystem built around structured learning, strategic frameworks, digital services, and future-ready platform development." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://zubolaa.com/" />
-
+  <title>Zubolaa | Financial Intelligence Ecosystem</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand" aria-label="Zubolaa Home">
-        <div class="brand-mark better-logo">
-          <svg class="zub-logo-svg" viewBox="0 0 220 220" aria-hidden="true">
-            <defs>
-              <linearGradient id="zubGoldMain2" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#f7df94"/>
-                <stop offset="50%" stop-color="#e0bb46"/>
-                <stop offset="100%" stop-color="#c78617"/>
-              </linearGradient>
-              <linearGradient id="zubSilverMain2" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#d7d1cc"/>
-                <stop offset="100%" stop-color="#8f867d"/>
-              </linearGradient>
-            </defs>
-
-            <path d="M70 40 L112 18 L112 50 L79 73 L75 142 Z" fill="url(#zubGoldMain2)"/>
-            <path d="M120 18 L168 55 L135 55 L108 31 Z" fill="url(#zubGoldMain2)"/>
-            <path d="M90 63 H144 L84 137 H150 L131 156 H58 L117 82 H78 Z" fill="url(#zubGoldMain2)"/>
-            <path d="M145 56 H184 L123 112 H166 L144 132 H90 Z" fill="url(#zubGoldMain2)"/>
-            <path d="M82 149 L126 174 L180 145 L176 82 L188 139 L126 188 L70 154 Z" fill="url(#zubSilverMain2)"/>
-          </svg>
-        </div>
-        <span class="brand-text">Zubolaa</span>
+        <svg class="zubolaa-logo" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="goldGradHome" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f7e27c"/>
+              <stop offset="50%" stop-color="#d6ae3b"/>
+              <stop offset="100%" stop-color="#b88a1f"/>
+            </linearGradient>
+          </defs>
+          <polygon points="50,10 90,30 90,80 50,100 10,80 10,30"
+            fill="none" stroke="url(#goldGradHome)" stroke-width="5"/>
+          <path d="M25 35 L70 35 L35 75 L75 75"
+            fill="none" stroke="url(#goldGradHome)" stroke-width="7"
+            stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="120" y="75"
+            font-size="40" font-family="Arial, Helvetica, sans-serif"
+            font-weight="700" fill="url(#goldGradHome)">Zubolaa</text>
+        </svg>
       </a>
 
       <nav class="main-nav">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="academy.html">Academy</a>
         <a href="services.html">Services</a>
@@ -57,690 +41,389 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a href="contact.html" class="nav-cta">Join Ecosystem</a>
+      <a href="participation.html" class="nav-cta">Join Ecosystem</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-grid"></div>
-      <div class="hero-glow hero-glow-left"></div>
-      <div class="hero-glow hero-glow-right"></div>
-
-      <div class="container hero-layout">
-        <div class="hero-visual">
-          <div class="cosmic-3d">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="orbit orbit-three"></div>
-            <div class="planet-core"></div>
-            <div class="floating-node node-one"></div>
-            <div class="floating-node node-two"></div>
-            <div class="floating-node node-three"></div>
-          </div>
-        </div>
-
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span>🚀</span>
-            <span>Building the Next-Generation Fintech Ecosystem</span>
-          </div>
-
-          <h1 class="hero-title">Zubolaa</h1>
-          <p class="hero-kicker">The Financial Intelligence Ecosystem</p>
-          <p class="hero-subtitle">Financial Education • Strategy • Digital Growth Ecosystem</p>
-          <p class="hero-quote">We build knowledge first. Then discipline. Then systems. Then scale.</p>
-
-          <div class="hero-actions">
-            <a href="academy.html" class="btn btn-primary">Explore Academy</a>
-            <a href="contact.html" class="btn btn-outline">Join Ecosystem</a>
-          </div>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-visual">
+        <div class="orbit-wrap">
+          <div class="main-planet"></div>
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <div class="mini-dot dot-1"></div>
+          <div class="mini-dot dot-2"></div>
+          <div class="mini-dot dot-3"></div>
         </div>
       </div>
 
-      <div class="hero-shape hero-shape-left"></div>
-      <div class="hero-shape hero-shape-right"></div>
-    </section>
+      <div class="hero-content">
+        <div class="eyebrow">🚀 Next-Generation Fintech</div>
+        <h1 class="hero-title">Zubolaa</h1>
+        <h2 class="hero-subtitle">The Financial Intelligence Ecosystem</h2>
+        <p class="hero-highlight">Financial Education • Strategy • Digital Asset Ecosystem</p>
+        <p class="hero-text">
+          We build skills first. Then systems. Then scale.
+        </p>
 
-    <section class="section ticker-section" id="market-strip">
-      <div class="container">
-        <div class="section-head">
-          <h2>Global Market Overview</h2>
-          <p>Real-time financial market indicators for educational observation and ecosystem context.</p>
-        </div>
-
-        <div class="market-widget-shell">
-          <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-            {
-              "symbols": [
-                { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" },
-                { "proName": "BITSTAMP:ETHUSD", "title": "Ethereum" },
-                { "proName": "OANDA:XAUUSD", "title": "Gold" },
-                { "proName": "OANDA:EURUSD", "title": "EUR/USD" },
-                { "proName": "OANDA:GBPUSD", "title": "GBP/USD" },
-                { "proName": "NASDAQ:NDX", "title": "NASDAQ" }
-              ],
-              "showSymbolLogo": true,
-              "colorTheme": "dark",
-              "isTransparent": true,
-              "displayMode": "adaptive",
-              "locale": "en"
-            }
-            </script>
-          </div>
+        <div class="button-row">
+          <a href="academy.html" class="gold-btn">Explore Academy</a>
+          <a href="participation.html" class="outline-btn">Join Ecosystem</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head">
-          <h2>What is Zubolaa?</h2>
+  <!-- MARKET STRIP -->
+  <section class="page-section compact-top">
+    <div class="container center-text">
+      <h2 class="section-title">Live Market Strip</h2>
+      <p class="section-intro">
+        Bloomberg-style live market display for quick ecosystem context.
+      </p>
+
+      <div class="market-strip">
+        <span>XAU/USD 2,045 ▲ 0.62%</span>
+        <span>NASDAQ 18,240 ▲ 0.71%</span>
+        <span>BTC/USD 67,420 ▲ 1.84%</span>
+        <span>ETH/USD 3,420 ▲ 2.11%</span>
+        <span>DXY 103.71 ▼ 0.09%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS ZUBOLAA -->
+  <section class="page-section">
+    <div class="container center-text">
+      <h2 class="section-title">What is Zubolaa?</h2>
+      <p class="section-intro">
+        Zubolaa is a modern fintech ecosystem designed for education, disciplined strategy,
+        digital growth, and long-term infrastructure building.
+      </p>
+
+      <div class="card-grid three-col">
+        <div class="glass-card feature-card">
+          <div class="icon-box">📘</div>
+          <h3>Financial Education</h3>
           <p>
-            Zubolaa is a modern fintech ecosystem built for structured learning, disciplined growth,
-            strategic thinking, and long-term digital expansion.
+            Structured learning programs designed to guide individuals from foundation
+            to advanced market understanding.
           </p>
         </div>
 
-        <div class="card-grid three">
-          <div class="glass-card">
-            <div class="icon-box">📘</div>
-            <h3>Financial Education</h3>
-            <p>
-              Structured educational pathways designed to help learners build stronger market
-              understanding from foundation to advanced stages.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">📈</div>
-            <h3>Strategic Frameworks</h3>
-            <p>
-              Disciplined systems focused on market structure, planning, risk awareness,
-              and long-term execution quality.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">⚡</div>
-            <h3>Digital Growth Infrastructure</h3>
-            <p>
-              Modern digital services and platform-oriented development designed to help brands
-              build, position, and grow more effectively online.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="psychology">
-      <div class="container">
-        <div class="section-head">
-          <h2>The Psychology of Growth</h2>
+        <div class="glass-card feature-card">
+          <div class="icon-box">📈</div>
+          <h3>Strategic Frameworks</h3>
           <p>
-            Sustainable success is built in the mind before it appears in systems, markets, or business outcomes.
+            Disciplined market methodologies focused on structure, risk awareness,
+            and execution clarity.
           </p>
         </div>
 
-        <div class="card-grid three">
-          <div class="glass-card">
-            <div class="icon-box">🧠</div>
-            <h3>Clarity</h3>
-            <p>
-              Clear thinking improves decision-making, strengthens analysis, and supports
-              more responsible participation.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">⏳</div>
-            <h3>Discipline</h3>
-            <p>
-              Patience, consistency, and emotional control matter more than short-term intensity
-              or impulsive action.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">🎯</div>
-            <h3>Execution</h3>
-            <p>
-              Real progress happens when knowledge is translated into structured action
-              through controlled decision-making.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="ecosystem">
-      <div class="container">
-        <div class="section-head">
-          <h2>The Zubolaa Ecosystem</h2>
+        <div class="glass-card feature-card">
+          <div class="icon-box">⚡</div>
+          <h3>Digital Innovation</h3>
           <p>
-            Built around interconnected pillars that support financial intelligence, digital capability,
-            and long-term platform development.
+            A future-focused ecosystem integrating digital infrastructure, branding,
+            and asset-driven innovation.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="card-grid three">
-          <div class="glass-card">
-            <div class="icon-box">🏛️</div>
-            <h3>Education Layer</h3>
-            <p>
-              Professional-grade learning designed to support awareness, structure,
-              and disciplined development.
-            </p>
-          </div>
+  <!-- SERVICES -->
+  <section class="page-section">
+    <div class="container center-text">
+      <h2 class="section-title">Zubolaa Digital Services</h2>
+      <p class="section-intro">
+        Premium digital execution for individuals, creators, and modern business ventures.
+      </p>
 
-          <div class="glass-card">
-            <div class="icon-box">🧩</div>
-            <h3>Strategy Layer</h3>
-            <p>
-              Analytical and mindset-based frameworks built around planning, structure,
-              and execution clarity.
-            </p>
-          </div>
+      <div class="card-grid three-col">
+        <div class="glass-card feature-card">
+          <div class="icon-box">💻</div>
+          <h3>Website Development</h3>
+          <p>Modern, responsive websites with clean design and strong presentation.</p>
+        </div>
 
-          <div class="glass-card">
-            <div class="icon-box">🌐</div>
-            <h3>Growth Layer</h3>
-            <p>
-              Digital infrastructure, ecosystem evolution, and platform expansion designed
-              for long-term relevance.
-            </p>
-          </div>
+        <div class="glass-card feature-card">
+          <div class="icon-box">📣</div>
+          <h3>E-Marketing</h3>
+          <p>Strategic digital campaigns designed to strengthen visibility and brand positioning.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="icon-box">🧾</div>
+          <h3>Portfolio Design</h3>
+          <p>Professional portfolios and layouts that present your work with clarity.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="icon-box">🖼️</div>
+          <h3>Flyers & Promotions</h3>
+          <p>Premium visual content for product launches, campaigns, and brand communication.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="icon-box">✍️</div>
+          <h3>Content Writing</h3>
+          <p>Structured website, product, and marketing copy written for digital credibility.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="icon-box">🌐</div>
+          <h3>Social Media Promotions</h3>
+          <p>Brand-aligned promotions for visibility across social and digital channels.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section-alt" id="services">
-      <div class="container">
-        <div class="section-head">
-          <h2>Digital Growth & Technology Services</h2>
-          <p>
-            Helping brands, founders, and modern ventures build stronger digital presence,
-            structured communication, and long-term online positioning.
-          </p>
+  <!-- ACADEMY -->
+  <section class="page-section">
+    <div class="container center-text">
+      <h2 class="section-title">Zubolaa Trading Academy</h2>
+      <p class="section-intro">
+        Structured education designed to develop disciplined market participants
+        from foundation to advanced level.
+      </p>
+
+      <div class="card-grid four-col pricing-grid">
+        <div class="glass-card pricing-card">
+          <span class="pricing-label">FOUNDATION</span>
+          <h3>$251</h3>
+          <ul>
+            <li>Market Basics</li>
+            <li>Risk Management</li>
+            <li>Trading Psychology</li>
+            <li>Execution Discipline</li>
+          </ul>
         </div>
 
-        <div class="card-grid three">
-          <div class="glass-card">
-            <div class="icon-box">💻</div>
-            <h3>Website Development</h3>
-            <p>
-              Premium websites, landing pages, and platform-ready digital structures
-              built for trust, clarity, and performance.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">📣</div>
-            <h3>Digital Marketing Support</h3>
-            <p>
-              Structured promotion support designed to improve visibility, communication,
-              and audience engagement.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">🗂️</div>
-            <h3>Business Presentation Systems</h3>
-            <p>
-              Clean service positioning, portfolio presentation, and brand-facing layouts
-              for stronger professional identity.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">🪧</div>
-            <h3>Flyers & Promotions</h3>
-            <p>
-              Promotional creatives and campaign assets built to support stronger reach
-              and launch visibility.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">✍️</div>
-            <h3>Content Systems</h3>
-            <p>
-              Website content, professional messaging, educational copy, and communication
-              frameworks designed for clarity and impact.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">🧭</div>
-            <h3>Strategic Consulting</h3>
-            <p>
-              Support for digital planning, ecosystem direction, and structured rollout
-              for long-term projects and modern business models.
-            </p>
-          </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-label">GROWTH</span>
+          <h3>$551</h3>
+          <ul>
+            <li>Strategy Frameworks</li>
+            <li>Multi-Timeframe Analysis</li>
+            <li>Trade Planning</li>
+            <li>Market Structure</li>
+          </ul>
         </div>
 
-        <div class="section-action">
-          <a href="services.html" class="btn btn-primary">Explore Services</a>
+        <div class="glass-card pricing-card">
+          <span class="pricing-label">ELITE</span>
+          <h3>$1001</h3>
+          <ul>
+            <li>Professional Systems</li>
+            <li>Advanced Psychology</li>
+            <li>Performance Tracking</li>
+            <li>Execution Models</li>
+          </ul>
+        </div>
+
+        <div class="glass-card pricing-card">
+          <span class="pricing-label">CUSTOMIZED</span>
+          <h3>Tailored</h3>
+          <ul>
+            <li>User Capability Based</li>
+            <li>Pre-Psychology Evaluation</li>
+            <li>Technical Assessment</li>
+            <li>Personalized Learning Path</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="academy">
-      <div class="container">
-        <div class="section-head">
-          <h2>Zubolaa Trading Academy</h2>
-          <p>
-            Professional financial education built for learners who want structured market understanding,
-            stronger psychology, and disciplined long-term growth.
-          </p>
+  <!-- PARTICIPATION -->
+  <section class="page-section">
+    <div class="container center-text">
+      <h2 class="section-title">Zubolaa Participation Program</h2>
+      <p class="section-intro">
+        The Participation Program is designed to support ecosystem growth,
+        community alignment, and long-term digital infrastructure development.
+      </p>
+
+      <div class="card-grid four-col">
+        <div class="glass-card feature-card compact-card">
+          <h3>$100 – $250</h3>
+          <p>Starter participation level for entry-stage ecosystem contributors.</p>
         </div>
 
-        <div class="card-grid four">
-          <div class="glass-card program-card">
-            <span class="program-tag">Foundation</span>
-            <h3>$251</h3>
-            <ul>
-              <li>Market Foundations</li>
-              <li>Risk Awareness</li>
-              <li>Trading Psychology Basics</li>
-              <li>Execution Discipline</li>
-            </ul>
-          </div>
-
-          <div class="glass-card program-card featured">
-            <span class="program-tag">Growth</span>
-            <h3>$551</h3>
-            <ul>
-              <li>Strategy Frameworks</li>
-              <li>Multi-Timeframe Analysis</li>
-              <li>Trade Planning</li>
-              <li>Market Structure</li>
-            </ul>
-          </div>
-
-          <div class="glass-card program-card">
-            <span class="program-tag">Elite</span>
-            <h3>$1001</h3>
-            <ul>
-              <li>Advanced Systems</li>
-              <li>Higher-Level Psychology</li>
-              <li>Performance Tracking</li>
-              <li>Execution Models</li>
-            </ul>
-          </div>
-
-          <div class="glass-card program-card">
-            <span class="program-tag">Customized</span>
-            <h3>Tailored</h3>
-            <ul>
-              <li>Capability-Based Path</li>
-              <li>Psychology Review</li>
-              <li>Technical Assessment</li>
-              <li>Personalized Learning Direction</li>
-            </ul>
-          </div>
+        <div class="glass-card feature-card compact-card">
+          <h3>$251 – $500</h3>
+          <p>Structured participation tier with stronger ecosystem alignment.</p>
         </div>
 
-        <div class="section-action">
-          <a href="academy.html" class="btn btn-primary">View Full Academy</a>
+        <div class="glass-card feature-card compact-card">
+          <h3>$551 – $1000</h3>
+          <p>Advanced participation tier for more serious long-term contributors.</p>
+        </div>
+
+        <div class="glass-card feature-card compact-card">
+          <h3>$1000+</h3>
+          <p>Strategic ecosystem participation level for higher-capacity engagement.</p>
         </div>
       </div>
-    </section>
 
-    <section class="section section-alt" id="token">
-      <div class="container">
-        <div class="section-head">
-          <h2>ZBL Token</h2>
-          <p>
-            A future utility layer positioned to support ecosystem access, engagement,
-            educational expansion, and broader platform evolution.
-          </p>
+      <p class="section-note">
+        Informational ecosystem section only. No guaranteed returns or investment promises.
+      </p>
+    </div>
+  </section>
+
+  <!-- CHART -->
+  <section class="page-section">
+    <div class="container center-text">
+      <h2 class="section-title">Live TradingView Chart</h2>
+      <p class="section-intro">
+        Interactive charting layer for market observation and educational reference.
+      </p>
+
+      <div class="glass-card chart-frame">
+        <iframe
+          src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_chart&symbol=OANDA%3AXAUUSD&interval=60&hidesidetoolbar=0&symboledit=1&saveimage=1&toolbarbg=F1F3F6&studies=[]&theme=dark&style=1&timezone=Asia%2FKolkata&withdateranges=1&hidevolume=0&allow_symbol_change=1"
+          title="TradingView Chart"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOKEN -->
+  <section class="page-section">
+    <div class="container center-text">
+      <h2 class="section-title">Zubolaa Token</h2>
+      <p class="section-intro">
+        The Zubolaa token represents the ecosystem layer supporting future digital utility,
+        participation, and community alignment.
+      </p>
+
+      <div class="card-grid three-col">
+        <div class="glass-card feature-card">
+          <h3>Ecosystem Identity</h3>
+          <p>A utility-oriented token layer aligned with the broader Zubolaa vision.</p>
         </div>
 
-        <div class="card-grid three">
-          <div class="glass-card">
-            <h3>Access Layer</h3>
-            <p>
-              Designed to support selected ecosystem access models and future platform-linked
-              participation features.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <h3>Engagement Layer</h3>
-            <p>
-              Positioned to strengthen broader ecosystem alignment, community interaction,
-              and platform relevance over time.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <h3>Expansion Layer</h3>
-            <p>
-              Built around long-term roadmap planning and future digital integration
-              within the Zubolaa ecosystem.
-            </p>
-          </div>
+        <div class="glass-card feature-card">
+          <h3>Future Utility Layer</h3>
+          <p>Designed to support ecosystem participation and long-term digital infrastructure.</p>
         </div>
 
-        <div class="token-note">
-          Informational section only. Token-related features remain subject to official updates, platform terms, and applicable review.
-        </div>
-
-        <div class="section-action">
-          <a href="token.html" class="btn btn-outline">View Token Overview</a>
+        <div class="glass-card feature-card">
+          <h3>Community Alignment</h3>
+          <p>Built to connect engagement, learning, and platform participation over time.</p>
         </div>
       </div>
-    </section>
 
-    <section class="section section-alt" id="participation">
-      <div class="container">
-        <div class="section-head">
-          <h2>Participation Program</h2>
-          <p>
-            Zubolaa participation programs are designed for individuals who want to engage with the ecosystem
-            through structured digital participation and partner-oriented growth models.
-          </p>
-        </div>
+      <p class="section-note">Informational section only. No investment promises.</p>
+    </div>
+  </section>
 
-        <div class="card-grid three">
-          <div class="glass-card">
-            <h3>Community Participation</h3>
-            <p>
-              Members can engage with ecosystem activities including academy programs, digital services,
-              and community growth initiatives.
-            </p>
-          </div>
+  <!-- INSIGHT -->
+  <section class="page-section">
+    <div class="container center-text">
+      <h2 class="section-title">Daily Market Insight</h2>
+      <p class="section-intro">
+        Educational market observations focused on structure, discipline, and clarity.
+      </p>
 
-          <div class="glass-card">
-            <h3>Partner Opportunities</h3>
-            <p>
-              Ecosystem participants can promote academy programs and digital services through structured
-              referral and partner models.
-            </p>
-          </div>
+      <div class="glass-card insight-box left-text">
+        <p><strong>Session:</strong> London</p>
+        <p><strong>Market:</strong> Gold</p>
+        <p><strong>Bias:</strong> Bullish Structure</p>
+        <p><strong>Key Levels:</strong> 2040 / 2055</p>
+        <p><strong>Risk Reminder:</strong> Respect stop loss. Protect capital.</p>
+      </div>
 
-          <div class="glass-card">
-            <h3>Ecosystem Growth</h3>
-            <p>
-              Participation frameworks are designed to support long-term ecosystem expansion
-              and digital platform development.
-            </p>
-          </div>
+      <div class="button-row center-btns">
+        <a href="insights.html" class="outline-btn">Open Insights</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="page-section">
+    <div class="container">
+      <div class="glass-card closing-box center-text">
+        <h2 class="section-title">Enter the Zubolaa Ecosystem</h2>
+        <p class="section-intro narrow">
+          Build your digital presence, strengthen your market understanding,
+          and grow with a long-term strategic mindset.
+        </p>
+
+        <div class="button-row center-btns">
+          <a href="academy.html" class="gold-btn">Explore Academy</a>
+          <a href="services.html" class="outline-btn">View Services</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="roadmap">
-      <div class="container">
-        <div class="section-head">
-          <h2>Development Roadmap</h2>
-          <p>
-            A phased path to building the Zubolaa fintech ecosystem with clarity, structure, and long-term direction.
-          </p>
-        </div>
-
-        <div class="card-grid three">
-          <div class="glass-card">
-            <div class="icon-box">1</div>
-            <h3>Phase 1 — Foundation</h3>
-            <p>
-              Platform launch, academy rollout, brand positioning, and initial ecosystem structure.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">2</div>
-            <h3>Phase 2 — Expansion</h3>
-            <p>
-              Service development, content scaling, community growth, and broader digital reach.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <div class="icon-box">3</div>
-            <h3>Phase 3 — Scale</h3>
-            <p>
-              Platform expansion, utility integration, stronger infrastructure, and wider fintech growth.
-            </p>
-          </div>
-        </div>
-
-        <div class="section-action">
-          <a href="roadmap.html" class="btn btn-outline">Open Roadmap</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="insights">
-      <div class="container">
-        <div class="section-head">
-          <h2>Educational Market Insights</h2>
-          <p>
-            Structured market observations focused on process, discipline, and clearer analytical thinking.
-          </p>
-        </div>
-
-        <div class="glass-card insight-card">
-          <p><strong>Session:</strong> London</p>
-          <p><strong>Market:</strong> Gold</p>
-          <p><strong>Context:</strong> Bullish Structure</p>
-          <p><strong>Key Levels:</strong> 2040 / 2055</p>
-          <p><strong>Risk Reminder:</strong> Structure first. Execution second. Capital protection always matters.</p>
-        </div>
-
-        <div class="section-action">
-          <a href="insights.html" class="btn btn-outline">Open Insights</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="chart">
-      <div class="container">
-        <div class="section-head">
-          <h2>Live TradingView Chart</h2>
-          <p>Interactive charting layer for market observation and educational reference.</p>
-        </div>
-
-        <div class="chart-card">
-          <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-            {
-              "autosize": true,
-              "symbol": "OANDA:XAUUSD",
-              "interval": "60",
-              "timezone": "Asia/Kolkata",
-              "theme": "dark",
-              "style": "1",
-              "locale": "en",
-              "allow_symbol_change": true,
-              "backgroundColor": "#050816",
-              "gridColor": "rgba(214,174,59,0.08)"
-            }
-            </script>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section final-cta" id="join-ecosystem">
-      <div class="container">
-        <div class="cta-box">
-          <h2>Join the Zubolaa Ecosystem</h2>
-          <p>
-            Build your digital presence, strengthen your market understanding,
-            and grow with a structured fintech ecosystem designed around psychology, strategy, and long-term development.
-          </p>
-
-          <div class="hero-actions">
-            <a href="academy.html" class="btn btn-primary">Explore Academy</a>
-            <a href="services.html" class="btn btn-outline">View Services</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" id="contact">
-    <div class="container footer-top">
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <div class="footer-brand-row">
-          <div class="brand-mark better-logo">
-            <svg class="zub-logo-svg" viewBox="0 0 220 220" aria-hidden="true">
-              <defs>
-                <linearGradient id="zubGoldFooter2" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#f7df94"/>
-                  <stop offset="50%" stop-color="#e0bb46"/>
-                  <stop offset="100%" stop-color="#c78617"/>
-                </linearGradient>
-                <linearGradient id="zubSilverFooter2" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#d7d1cc"/>
-                  <stop offset="100%" stop-color="#8f867d"/>
-                </linearGradient>
-              </defs>
-
-              <path d="M70 40 L112 18 L112 50 L79 73 L75 142 Z" fill="url(#zubGoldFooter2)"/>
-              <path d="M120 18 L168 55 L135 55 L108 31 Z" fill="url(#zubGoldFooter2)"/>
-              <path d="M90 63 H144 L84 137 H150 L131 156 H58 L117 82 H78 Z" fill="url(#zubGoldFooter2)"/>
-              <path d="M145 56 H184 L123 112 H166 L144 132 H90 Z" fill="url(#zubGoldFooter2)"/>
-              <path d="M82 149 L126 174 L180 145 L176 82 L188 139 L126 188 L70 154 Z" fill="url(#zubSilverFooter2)"/>
-            </svg>
-          </div>
-          <h3>Zubolaa</h3>
-        </div>
+        <a href="index.html" class="brand footer-brand-link">
+          <svg class="zubolaa-logo footer-svg-logo" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="goldGradFooter1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7e27c"/>
+                <stop offset="50%" stop-color="#d6ae3b"/>
+                <stop offset="100%" stop-color="#b88a1f"/>
+              </linearGradient>
+            </defs>
+            <polygon points="50,10 90,30 90,80 50,100 10,80 10,30"
+              fill="none" stroke="url(#goldGradFooter1)" stroke-width="5"/>
+            <path d="M25 35 L70 35 L35 75 L75 75"
+              fill="none" stroke="url(#goldGradFooter1)" stroke-width="7"
+              stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="120" y="75"
+              font-size="40" font-family="Arial, Helvetica, sans-serif"
+              font-weight="700" fill="url(#goldGradFooter1)">Zubolaa</text>
+          </svg>
+        </a>
         <p>
-          Zubolaa is a fintech ecosystem built around structured learning, psychology-driven growth,
-          digital services, and future-ready platform development.
+          Building financial intelligence through education, strategy,
+          and digital infrastructure.
         </p>
       </div>
 
-      <div class="footer-links">
-        <div>
-          <h4>Platform</h4>
-          <a href="about.html">About</a>
-          <a href="academy.html">Academy</a>
-          <a href="services.html">Services</a>
-          <a href="token.html">Token</a>
-          <a href="insights.html">Insights</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <div>
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="token.html">Token</a></li>
+          <li><a href="insights.html">Insights</a></li>
+        </ul>
+      </div>
 
-        <div>
-          <h4>Legal</h4>
-          <a href="contact.html">Contact</a>
-          <a href="disclaimer.html">Disclaimer</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Use</a>
-          <a href="risk-disclosure.html">Risk Disclosure</a>
-          <a href="tel:+919549400456">+91 95494 00456</a>
-          <a href="mailto:rise@zubolaa.com">rise@zubolaa.com</a>
-        </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="container">
       <div class="footer-disclaimer">
-        <strong>Disclaimer:</strong> Zubolaa provides educational content and digital services for informational and business communication purposes only.
-        Educational material should not be treated as financial, legal, or investment advice.
+        <strong>Disclaimer:</strong> Zubolaa provides educational content and digital services only.
         We are not registered with SEBI as an investment advisor or research analyst.
-        Trading activities, financial markets, and digital assets involve risk.
-        Token and ecosystem-related features are subject to official updates, platform terms, and applicable review where required.
+        Trading and digital assets involve risk.
       </div>
-
-      <div class="footer-bottom">
-        <p>© <span id="year"></span> Zubolaa. All rights reserved.</p>
-      </div>
+      <p class="copyright">© 2026 Zubolaa. All rights reserved.</p>
     </div>
   </footer>
 
-  <div class="zub-chat-widget">
-    <button class="zub-chat-launcher" id="zubChatLauncher" onclick="toggleZubChat()" aria-label="Open Zubolaa Assistant">
-      <svg class="zub-bot-svg launcher-bot" viewBox="0 0 64 64" aria-hidden="true">
-        <defs>
-          <linearGradient id="zubBotBlue" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#7dd3fc"/>
-            <stop offset="100%" stop-color="#2563eb"/>
-          </linearGradient>
-          <linearGradient id="zubBotGold" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#f4d06f"/>
-            <stop offset="100%" stop-color="#d6ae3b"/>
-          </linearGradient>
-        </defs>
-        <circle cx="32" cy="10" r="4" fill="url(#zubBotBlue)"/>
-        <rect x="31" y="13" width="2" height="6" rx="1" fill="url(#zubBotBlue)"/>
-        <rect x="16" y="18" width="32" height="24" rx="12" fill="#f8fafc" stroke="url(#zubBotGold)" stroke-width="1.4"/>
-        <rect x="21" y="23" width="22" height="14" rx="7" fill="#0f172a"/>
-        <circle cx="27" cy="30" r="2.1" fill="#67e8f9"/>
-        <circle cx="37" cy="30" r="2.1" fill="#67e8f9"/>
-        <path d="M27 34 Q32 38 37 34" fill="none" stroke="#67e8f9" stroke-width="1.8" stroke-linecap="round"/>
-        <rect x="27" y="42" width="10" height="8" rx="4" fill="url(#zubBotBlue)"/>
-        <rect x="12" y="24" width="6" height="14" rx="3" fill="#e2e8f0"/>
-        <rect x="46" y="24" width="6" height="14" rx="3" fill="#e2e8f0"/>
-        <rect x="18" y="44" width="6" height="10" rx="3" fill="#e2e8f0"/>
-        <rect x="40" y="44" width="6" height="10" rx="3" fill="#e2e8f0"/>
-      </svg>
-    </button>
-
-    <div class="zub-chat-box" id="zubChatBox">
-      <div class="zub-chat-header">
-        <div class="zub-chat-header-left">
-          <div class="zub-chat-bot-icon">
-            <svg class="zub-bot-svg header-bot" viewBox="0 0 64 64" aria-hidden="true">
-              <defs>
-                <linearGradient id="zubBotBlue2" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#7dd3fc"/>
-                  <stop offset="100%" stop-color="#2563eb"/>
-                </linearGradient>
-                <linearGradient id="zubBotGold2" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#f4d06f"/>
-                  <stop offset="100%" stop-color="#d6ae3b"/>
-                </linearGradient>
-              </defs>
-              <circle cx="32" cy="10" r="4" fill="url(#zubBotBlue2)"/>
-              <rect x="31" y="13" width="2" height="6" rx="1" fill="url(#zubBotBlue2)"/>
-              <rect x="16" y="18" width="32" height="24" rx="12" fill="#f8fafc" stroke="url(#zubBotGold2)" stroke-width="1.4"/>
-              <rect x="21" y="23" width="22" height="14" rx="7" fill="#0f172a"/>
-              <circle cx="27" cy="30" r="2.1" fill="#67e8f9"/>
-              <circle cx="37" cy="30" r="2.1" fill="#67e8f9"/>
-              <path d="M27 34 Q32 38 37 34" fill="none" stroke="#67e8f9" stroke-width="1.8" stroke-linecap="round"/>
-              <rect x="27" y="42" width="10" height="8" rx="4" fill="url(#zubBotBlue2)"/>
-              <rect x="12" y="24" width="6" height="14" rx="3" fill="#e2e8f0"/>
-              <rect x="46" y="24" width="6" height="14" rx="3" fill="#e2e8f0"/>
-              <rect x="18" y="44" width="6" height="10" rx="3" fill="#e2e8f0"/>
-              <rect x="40" y="44" width="6" height="10" rx="3" fill="#e2e8f0"/>
-            </svg>
-          </div>
-          <div>
-            <h4 id="zubBotName">Zubolaa Assistant</h4>
-            <p>Online • Welcome to Zubolaa</p>
-          </div>
-        </div>
-        <button class="zub-chat-close" onclick="toggleZubChat()" aria-label="Close chat">×</button>
-      </div>
-
-      <div class="zub-chat-body">
-        <div class="zub-chat-message bot">
-          <span id="zubBotWelcome"></span>
-        </div>
-
-        <div class="zub-chat-actions">
-          <a href="#academy" class="zub-chat-action-btn">📚 Explore Academy</a>
-          <a href="#services" class="zub-chat-action-btn">💼 Digital Services</a>
-          <a href="#token" class="zub-chat-action-btn">🪙 ZBL Token</a>
-          <a href="#participation" class="zub-chat-action-btn">💰 Participation Program</a>
-          <a href="#insights" class="zub-chat-action-btn">📈 Market Insights</a>
-          <a href="https://wa.me/919549400456" target="_blank" class="zub-chat-action-btn">💬 WhatsApp Support</a>
-          <a href="mailto:rise@zubolaa.com" class="zub-chat-action-btn">📩 Email Us</a>
-          <a href="contact.html" class="zub-chat-action-btn">🚀 Join Ecosystem</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
