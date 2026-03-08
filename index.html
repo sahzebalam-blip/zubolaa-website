@@ -48,7 +48,7 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero-grid"></div>
       <div class="hero-glow hero-glow-left"></div>
       <div class="hero-glow hero-glow-right"></div>
@@ -92,7 +92,7 @@
     </section>
 
     <!-- LIVE MARKET STRIP -->
-    <section class="section ticker-section">
+    <section class="section ticker-section" id="market-strip">
       <div class="container">
         <div class="section-head">
           <h2>Live Market Strip</h2>
@@ -120,7 +120,7 @@
     </section>
 
     <!-- WHAT IS ZUBOLAA -->
-    <section class="section">
+    <section class="section" id="about">
       <div class="container">
         <div class="section-head">
           <h2>What is Zubolaa?</h2>
@@ -162,7 +162,7 @@
     </section>
 
     <!-- SERVICES PREVIEW -->
-    <section class="section section-alt">
+    <section class="section section-alt" id="services">
       <div class="container">
         <div class="section-head">
           <h2>Zubolaa Digital Services</h2>
@@ -212,7 +212,7 @@
     </section>
 
     <!-- ACADEMY PREVIEW -->
-    <section class="section">
+    <section class="section" id="academy">
       <div class="container">
         <div class="section-head">
           <h2>Zubolaa Trading Academy</h2>
@@ -275,7 +275,7 @@
     </section>
 
     <!-- LIVE TRADINGVIEW CHART -->
-    <section class="section section-alt">
+    <section class="section section-alt" id="chart">
       <div class="container">
         <div class="section-head">
           <h2>Live TradingView Chart</h2>
@@ -305,7 +305,7 @@
     </section>
 
     <!-- TOKEN PREVIEW -->
-    <section class="section section-alt">
+    <section class="section section-alt" id="token">
       <div class="container">
         <div class="section-head">
           <h2>Zubolaa Token</h2>
@@ -339,7 +339,7 @@
     </section>
 
     <!-- INSIGHTS PREVIEW -->
-    <section class="section">
+    <section class="section" id="insights">
       <div class="container">
         <div class="section-head">
           <h2>Daily Market Insight</h2>
@@ -363,7 +363,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="section final-cta">
+    <section class="section final-cta" id="join-ecosystem">
       <div class="container">
         <div class="cta-box">
           <h2>Enter the Zubolaa Ecosystem</h2>
@@ -381,7 +381,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="contact">
     <div class="container footer-top">
       <div class="footer-brand">
         <div class="footer-brand-row">
@@ -426,6 +426,46 @@
       </div>
     </div>
   </footer>
+
+  <!-- ZUBOLAA CHAT WIDGET -->
+  <div class="zub-chat-widget">
+    <button class="zub-chat-launcher" id="zubChatLauncher" onclick="toggleZubChat()" aria-label="Open Zubolaa Assistant">
+      <span class="zub-chat-launcher-icon">🤖</span>
+    </button>
+
+    <div class="zub-chat-box" id="zubChatBox">
+      <div class="zub-chat-header">
+        <div class="zub-chat-header-left">
+          <div class="zub-chat-bot-icon">
+            <span>🤖</span>
+          </div>
+          <div>
+            <h4>Zubolaa Assistant</h4>
+            <p>Online • Welcome to Zubolaa</p>
+          </div>
+        </div>
+        <button class="zub-chat-close" onclick="toggleZubChat()" aria-label="Close chat">×</button>
+      </div>
+
+      <div class="zub-chat-body">
+        <div class="zub-chat-message bot">
+          Hi 👋<br>
+          Welcome to <strong>Zubolaa</strong>.<br>
+          How would you like to continue?
+        </div>
+
+        <div class="zub-chat-actions">
+          <a href="#academy" class="zub-chat-action-btn">📚 Explore Academy</a>
+          <a href="#services" class="zub-chat-action-btn">💼 View Services</a>
+          <a href="#token" class="zub-chat-action-btn">🪙 Zubolaa Token</a>
+          <a href="#insights" class="zub-chat-action-btn">📈 Daily Insights</a>
+          <a href="https://wa.me/919999999999" target="_blank" class="zub-chat-action-btn">💬 WhatsApp Support</a>
+          <a href="mailto:rise@zubolaa.com" class="zub-chat-action-btn">📩 Email Us</a>
+          <a href="contact.html" class="zub-chat-action-btn">🚀 Join Ecosystem</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
