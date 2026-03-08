@@ -12,39 +12,32 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand" aria-label="Zubolaa Home">
-        <svg class="zubolaa-logo" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+        <svg class="zubolaa-logo" viewBox="0 0 460 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zubolaa Logo">
           <defs>
             <linearGradient id="goldGradAbout" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#f7e27c"/>
-              <stop offset="50%" stop-color="#d6ae3b"/>
-              <stop offset="100%" stop-color="#b88a1f"/>
+              <stop offset="0%" stop-color="#f8e38a"/>
+              <stop offset="45%" stop-color="#d6ae3b"/>
+              <stop offset="100%" stop-color="#9f7416"/>
+            </linearGradient>
+            <linearGradient id="silverGradAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e6e2d8"/>
+              <stop offset="100%" stop-color="#7f7a72"/>
             </linearGradient>
           </defs>
 
-          <polygon
-            points="50,10 90,30 90,80 50,100 10,80 10,30"
-            fill="none"
-            stroke="url(#goldGradAbout)"
-            stroke-width="5"
-          />
+          <g transform="translate(8,8)">
+            <path d="M38 4 L76 24 L76 74 L40 94 L4 74 L4 24 Z"
+              fill="none" stroke="url(#goldGradAbout)" stroke-width="4.5" stroke-linejoin="round"/>
+            <path d="M40 94 L76 74" fill="none" stroke="url(#silverGradAbout)" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M20 30 H58 L28 60 H62"
+              fill="none" stroke="url(#goldGradAbout)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
 
-          <path
-            d="M25 35 L70 35 L35 75 L75 75"
-            fill="none"
-            stroke="url(#goldGradAbout)"
-            stroke-width="7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-
-          <text
-            x="120"
-            y="75"
-            font-size="40"
+          <text x="108" y="73"
+            font-size="42"
             font-family="Arial, Helvetica, sans-serif"
-            font-weight="700"
-            fill="url(#goldGradAbout)"
-          >
+            font-weight="800"
+            fill="url(#goldGradAbout)">
             Zubolaa
           </text>
         </svg>
@@ -235,39 +228,32 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand footer-brand-link">
-          <svg class="zubolaa-logo footer-svg-logo" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+          <svg class="zubolaa-logo footer-svg-logo" viewBox="0 0 460 120" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="goldGradFooterAbout" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#f7e27c"/>
-                <stop offset="50%" stop-color="#d6ae3b"/>
-                <stop offset="100%" stop-color="#b88a1f"/>
+                <stop offset="0%" stop-color="#f8e38a"/>
+                <stop offset="45%" stop-color="#d6ae3b"/>
+                <stop offset="100%" stop-color="#9f7416"/>
+              </linearGradient>
+              <linearGradient id="silverGradFooterAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#e6e2d8"/>
+                <stop offset="100%" stop-color="#7f7a72"/>
               </linearGradient>
             </defs>
 
-            <polygon
-              points="50,10 90,30 90,80 50,100 10,80 10,30"
-              fill="none"
-              stroke="url(#goldGradFooterAbout)"
-              stroke-width="5"
-            />
+            <g transform="translate(8,8)">
+              <path d="M38 4 L76 24 L76 74 L40 94 L4 74 L4 24 Z"
+                fill="none" stroke="url(#goldGradFooterAbout)" stroke-width="4.5" stroke-linejoin="round"/>
+              <path d="M40 94 L76 74" fill="none" stroke="url(#silverGradFooterAbout)" stroke-width="4.5" stroke-linecap="round"/>
+              <path d="M20 30 H58 L28 60 H62"
+                fill="none" stroke="url(#goldGradFooterAbout)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
 
-            <path
-              d="M25 35 L70 35 L35 75 L75 75"
-              fill="none"
-              stroke="url(#goldGradFooterAbout)"
-              stroke-width="7"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-
-            <text
-              x="120"
-              y="75"
-              font-size="40"
+            <text x="108" y="73"
+              font-size="42"
               font-family="Arial, Helvetica, sans-serif"
-              font-weight="700"
-              fill="url(#goldGradFooterAbout)"
-            >
+              font-weight="800"
+              fill="url(#goldGradFooterAbout)">
               Zubolaa
             </text>
           </svg>
@@ -309,6 +295,12 @@
       <p class="copyright">© 2026 Zubolaa. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- FLOATING BOT -->
+  <a href="contact.html" class="floating-bot" aria-label="Open support">
+    <span class="bot-icon">🤖</span>
+    <span class="bot-label">Zubolaa Help</span>
+  </a>
 
 </body>
 </html>
