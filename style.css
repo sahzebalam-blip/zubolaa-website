@@ -1296,3 +1296,31 @@ h1,h2,h3,h4,h5,h6,
     max-width: 100%;
   }
 }
+.section-intro{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.card p{
+  font-size: 18px;
+  line-height: 1.75;
+}
+section h2{
+  font-size: 72px;
+  line-height: 1.05;
+  margin-bottom: 22px;
+}
+@media (max-width: 768px){
+  section h2{
+    font-size: 42px;
+  }
+
+  .about-closing-box h2{
+    font-size: 36px;
+  }
+
+  .card p,
+  .section-intro,
+  .about-closing-box p{
+    font-size: 17px;
+  }
+}
