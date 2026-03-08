@@ -9,37 +9,27 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-
 /* =========================
    Academy Modules Toggle
 ========================= */
-
 function toggleModules(id) {
   const panel = document.getElementById(id);
-
   if (!panel) return;
-
   panel.classList.toggle("open");
 }
-
 
 /* =========================
    Zubolaa Chat Widget
 ========================= */
-
 function toggleZubChat() {
   const chatBox = document.getElementById("zubChatBox");
-
   if (!chatBox) return;
-
   chatBox.classList.toggle("active");
 }
-
 
 /* =========================
    Smooth Scroll for Anchor Links
 ========================= */
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     const targetId = this.getAttribute("href");
@@ -70,11 +60,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-
 /* =========================
    Close Chat on Outside Click
 ========================= */
-
 document.addEventListener("click", function (e) {
   const chatWidget = document.querySelector(".zub-chat-widget");
   const chatBox = document.getElementById("zubChatBox");
@@ -86,14 +74,11 @@ document.addEventListener("click", function (e) {
   }
 });
 
-
 /* =========================
    Escape Key Closes Chat
 ========================= */
-
 document.addEventListener("keydown", function (e) {
   const chatBox = document.getElementById("zubChatBox");
-
   if (!chatBox) return;
 
   if (e.key === "Escape") {
