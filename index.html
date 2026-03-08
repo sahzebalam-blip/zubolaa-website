@@ -12,39 +12,39 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand" aria-label="Zubolaa Home">
-        <svg class="zubolaa-logo" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+        <svg class="zubolaa-logo" viewBox="0 0 460 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zubolaa Logo">
           <defs>
-            <linearGradient id="goldGradHome" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#f7e27c"/>
-              <stop offset="50%" stop-color="#d6ae3b"/>
-              <stop offset="100%" stop-color="#b88a1f"/>
+            <linearGradient id="goldGradMain" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f8e38a"/>
+              <stop offset="45%" stop-color="#d6ae3b"/>
+              <stop offset="100%" stop-color="#9f7416"/>
+            </linearGradient>
+            <linearGradient id="silverGradMain" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e6e2d8"/>
+              <stop offset="100%" stop-color="#7f7a72"/>
             </linearGradient>
           </defs>
 
-          <polygon
-            points="50,10 90,30 90,80 50,100 10,80 10,30"
-            fill="none"
-            stroke="url(#goldGradHome)"
-            stroke-width="5"
-          />
+          <!-- icon -->
+          <g transform="translate(8,8)">
+            <path d="M38 4 L76 24 L76 74 L40 94 L4 74 L4 24 Z"
+              fill="none" stroke="url(#goldGradMain)" stroke-width="4.5" stroke-linejoin="round"/>
+            <path d="M40 94 L76 74" fill="none" stroke="url(#silverGradMain)" stroke-width="4.5" stroke-linecap="round"/>
 
-          <path
-            d="M25 35 L70 35 L35 75 L75 75"
-            fill="none"
-            stroke="url(#goldGradHome)"
-            stroke-width="7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+            <path d="M20 30 H58 L28 60 H62"
+              fill="none"
+              stroke="url(#goldGradMain)"
+              stroke-width="7"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+          </g>
 
-          <text
-            x="120"
-            y="75"
-            font-size="40"
+          <!-- text -->
+          <text x="108" y="73"
+            font-size="42"
             font-family="Arial, Helvetica, sans-serif"
-            font-weight="700"
-            fill="url(#goldGradHome)"
-          >
+            font-weight="800"
+            fill="url(#goldGradMain)">
             Zubolaa
           </text>
         </svg>
@@ -74,6 +74,7 @@
           <div class="orbit orbit-1"></div>
           <div class="orbit orbit-2"></div>
           <div class="orbit orbit-3"></div>
+
           <div class="mini-dot dot-1"></div>
           <div class="mini-dot dot-2"></div>
           <div class="mini-dot dot-3"></div>
@@ -98,20 +99,35 @@
     </div>
   </section>
 
-  <!-- MARKET STRIP -->
+  <!-- LIVE MARKET TAPE -->
   <section class="page-section compact-top">
     <div class="container center-text">
       <h2 class="section-title">Live Market Strip</h2>
       <p class="section-intro">
-        Bloomberg-style live market display for quick ecosystem context.
+        Premium live market context powered through TradingView.
       </p>
 
-      <div class="market-strip">
-        <span>XAU/USD 2,045 ▲ 0.62%</span>
-        <span>NASDAQ 18,240 ▲ 0.71%</span>
-        <span>BTC/USD 67,420 ▲ 1.84%</span>
-        <span>ETH/USD 3,420 ▲ 2.11%</span>
-        <span>DXY 103.71 ▼ 0.09%</span>
+      <div class="glass-card tv-tape-card">
+        <div class="tradingview-widget-container market-tape-widget">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+            "symbols": [
+              { "proName": "OANDA:XAUUSD", "title": "Gold" },
+              { "proName": "FOREXCOM:SPXUSD", "title": "S&P 500" },
+              { "proName": "NASDAQ:NDX", "title": "Nasdaq 100" },
+              { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" },
+              { "proName": "BITSTAMP:ETHUSD", "title": "Ethereum" },
+              { "proName": "TVC:DXY", "title": "Dollar Index" }
+            ],
+            "showSymbolLogo": false,
+            "isTransparent": true,
+            "displayMode": "adaptive",
+            "colorTheme": "dark",
+            "locale": "en"
+          }
+          </script>
+        </div>
       </div>
     </div>
   </section>
@@ -391,39 +407,32 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand footer-brand-link">
-          <svg class="zubolaa-logo footer-svg-logo" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+          <svg class="zubolaa-logo footer-svg-logo" viewBox="0 0 460 120" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="goldGradFooter1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#f7e27c"/>
-                <stop offset="50%" stop-color="#d6ae3b"/>
-                <stop offset="100%" stop-color="#b88a1f"/>
+              <linearGradient id="goldGradFooterHome" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f8e38a"/>
+                <stop offset="45%" stop-color="#d6ae3b"/>
+                <stop offset="100%" stop-color="#9f7416"/>
+              </linearGradient>
+              <linearGradient id="silverGradFooterHome" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#e6e2d8"/>
+                <stop offset="100%" stop-color="#7f7a72"/>
               </linearGradient>
             </defs>
 
-            <polygon
-              points="50,10 90,30 90,80 50,100 10,80 10,30"
-              fill="none"
-              stroke="url(#goldGradFooter1)"
-              stroke-width="5"
-            />
+            <g transform="translate(8,8)">
+              <path d="M38 4 L76 24 L76 74 L40 94 L4 74 L4 24 Z"
+                fill="none" stroke="url(#goldGradFooterHome)" stroke-width="4.5" stroke-linejoin="round"/>
+              <path d="M40 94 L76 74" fill="none" stroke="url(#silverGradFooterHome)" stroke-width="4.5" stroke-linecap="round"/>
+              <path d="M20 30 H58 L28 60 H62"
+                fill="none" stroke="url(#goldGradFooterHome)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
 
-            <path
-              d="M25 35 L70 35 L35 75 L75 75"
-              fill="none"
-              stroke="url(#goldGradFooter1)"
-              stroke-width="7"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-
-            <text
-              x="120"
-              y="75"
-              font-size="40"
+            <text x="108" y="73"
+              font-size="42"
               font-family="Arial, Helvetica, sans-serif"
-              font-weight="700"
-              fill="url(#goldGradFooter1)"
-            >
+              font-weight="800"
+              fill="url(#goldGradFooterHome)">
               Zubolaa
             </text>
           </svg>
@@ -465,6 +474,12 @@
       <p class="copyright">© 2026 Zubolaa. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- FLOATING BOT -->
+  <a href="contact.html" class="floating-bot" aria-label="Open support">
+    <span class="bot-icon">🤖</span>
+    <span class="bot-label">Zubolaa Help</span>
+  </a>
 
 </body>
 </html>
