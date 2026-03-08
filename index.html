@@ -47,7 +47,6 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-grid"></div>
       <div class="hero-glow hero-glow-left"></div>
@@ -73,11 +72,8 @@
           </div>
 
           <h1 class="hero-title">Zubolaa</h1>
-
           <p class="hero-kicker">The Financial Intelligence Ecosystem</p>
-
           <p class="hero-subtitle">Financial Education • Strategy • Digital Asset Ecosystem</p>
-
           <p class="hero-quote">We build skills first. Then systems. Then scale.</p>
 
           <div class="hero-actions">
@@ -91,7 +87,6 @@
       <div class="hero-shape hero-shape-right"></div>
     </section>
 
-    <!-- LIVE MARKET STRIP -->
     <section class="section ticker-section" id="market-strip">
       <div class="container">
         <div class="section-head">
@@ -119,7 +114,6 @@
       </div>
     </section>
 
-    <!-- WHAT IS ZUBOLAA -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-head">
@@ -161,7 +155,6 @@
       </div>
     </section>
 
-    <!-- SERVICES PREVIEW -->
     <section class="section section-alt" id="services">
       <div class="container">
         <div class="section-head">
@@ -211,7 +204,6 @@
       </div>
     </section>
 
-    <!-- ACADEMY PREVIEW -->
     <section class="section" id="academy">
       <div class="container">
         <div class="section-head">
@@ -274,7 +266,6 @@
       </div>
     </section>
 
-    <!-- LIVE TRADINGVIEW CHART -->
     <section class="section section-alt" id="chart">
       <div class="container">
         <div class="section-head">
@@ -304,7 +295,6 @@
       </div>
     </section>
 
-    <!-- TOKEN PREVIEW -->
     <section class="section section-alt" id="token">
       <div class="container">
         <div class="section-head">
@@ -338,7 +328,6 @@
       </div>
     </section>
 
-    <!-- INSIGHTS PREVIEW -->
     <section class="section" id="insights">
       <div class="container">
         <div class="section-head">
@@ -362,7 +351,6 @@
       </div>
     </section>
 
-    <!-- CTA -->
     <section class="section final-cta" id="join-ecosystem">
       <div class="container">
         <div class="cta-box">
@@ -430,14 +418,60 @@
   <!-- ZUBOLAA CHAT WIDGET -->
   <div class="zub-chat-widget">
     <button class="zub-chat-launcher" id="zubChatLauncher" onclick="toggleZubChat()" aria-label="Open Zubolaa Assistant">
-      <span class="zub-chat-launcher-icon">🤖</span>
+      <svg class="zub-bot-svg launcher-bot" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="zubBotBlue" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#7dd3fc"/>
+            <stop offset="100%" stop-color="#2563eb"/>
+          </linearGradient>
+          <linearGradient id="zubBotGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f4d06f"/>
+            <stop offset="100%" stop-color="#d6ae3b"/>
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="10" r="4" fill="url(#zubBotBlue)"/>
+        <rect x="31" y="13" width="2" height="6" rx="1" fill="url(#zubBotBlue)"/>
+        <rect x="16" y="18" width="32" height="24" rx="12" fill="#f8fafc" stroke="url(#zubBotGold)" stroke-width="1.4"/>
+        <rect x="21" y="23" width="22" height="14" rx="7" fill="#0f172a"/>
+        <circle cx="27" cy="30" r="2.1" fill="#67e8f9"/>
+        <circle cx="37" cy="30" r="2.1" fill="#67e8f9"/>
+        <path d="M27 34 Q32 38 37 34" fill="none" stroke="#67e8f9" stroke-width="1.8" stroke-linecap="round"/>
+        <rect x="27" y="42" width="10" height="8" rx="4" fill="url(#zubBotBlue)"/>
+        <rect x="12" y="24" width="6" height="14" rx="3" fill="#e2e8f0"/>
+        <rect x="46" y="24" width="6" height="14" rx="3" fill="#e2e8f0"/>
+        <rect x="18" y="44" width="6" height="10" rx="3" fill="#e2e8f0"/>
+        <rect x="40" y="44" width="6" height="10" rx="3" fill="#e2e8f0"/>
+      </svg>
     </button>
 
     <div class="zub-chat-box" id="zubChatBox">
       <div class="zub-chat-header">
         <div class="zub-chat-header-left">
           <div class="zub-chat-bot-icon">
-            <span>🤖</span>
+            <svg class="zub-bot-svg header-bot" viewBox="0 0 64 64" aria-hidden="true">
+              <defs>
+                <linearGradient id="zubBotBlue2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7dd3fc"/>
+                  <stop offset="100%" stop-color="#2563eb"/>
+                </linearGradient>
+                <linearGradient id="zubBotGold2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#f4d06f"/>
+                  <stop offset="100%" stop-color="#d6ae3b"/>
+                </linearGradient>
+              </defs>
+              <circle cx="32" cy="10" r="4" fill="url(#zubBotBlue2)"/>
+              <rect x="31" y="13" width="2" height="6" rx="1" fill="url(#zubBotBlue2)"/>
+              <rect x="16" y="18" width="32" height="24" rx="12" fill="#f8fafc" stroke="url(#zubBotGold2)" stroke-width="1.4"/>
+              <rect x="21" y="23" width="22" height="14" rx="7" fill="#0f172a"/>
+              <circle cx="27" cy="30" r="2.1" fill="#67e8f9"/>
+              <circle cx="37" cy="30" r="2.1" fill="#67e8f9"/>
+              <path d="M27 34 Q32 38 37 34" fill="none" stroke="#67e8f9" stroke-width="1.8" stroke-linecap="round"/>
+              <rect x="27" y="42" width="10" height="8" rx="4" fill="url(#zubBotBlue2)"/>
+              <rect x="12" y="24" width="6" height="14" rx="3" fill="#e2e8f0"/>
+              <rect x="46" y="24" width="6" height="14" rx="3" fill="#e2e8f0"/>
+              <rect x="18" y="44" width="6" height="10" rx="3" fill="#e2e8f0"/>
+              <rect x="40" y="44" width="6" height="10" rx="3" fill="#e2e8f0"/>
+            </svg>
           </div>
           <div>
             <h4>Zubolaa Assistant</h4>
