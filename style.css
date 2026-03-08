@@ -1,8 +1,8 @@
 :root{
   --bg:#050816;
   --bg-soft:#081129;
-  --panel:rgba(8, 14, 38, 0.78);
-  --panel-2:rgba(11, 18, 38, 0.92);
+  --panel:rgba(8, 14, 38, 0.80);
+  --panel-2:rgba(11, 18, 38, 0.94);
   --line:rgba(214,174,59,0.18);
   --gold:#d6ae3b;
   --gold-soft:#f1d06d;
@@ -25,8 +25,8 @@ body{
   font-family:Arial, Helvetica, sans-serif;
   color:var(--text);
   background:
-    radial-gradient(circle at 20% 20%, rgba(124,58,237,0.08), transparent 25%),
-    radial-gradient(circle at 80% 30%, rgba(214,174,59,0.06), transparent 22%),
+    radial-gradient(circle at 20% 12%, rgba(124,58,237,0.08), transparent 22%),
+    radial-gradient(circle at 78% 18%, rgba(214,174,59,0.06), transparent 20%),
     linear-gradient(180deg, #020617 0%, #050816 100%);
   background-color:var(--bg);
   overflow-x:hidden;
@@ -47,7 +47,7 @@ svg{
   margin:0 auto;
 }
 
-/* HEADER */
+/* header */
 .site-header{
   position:sticky;
   top:0;
@@ -68,17 +68,16 @@ svg{
 .brand{
   display:flex;
   align-items:center;
-  text-decoration:none;
   min-width:max-content;
 }
 
 .zubolaa-logo{
-  height:55px;
+  height:58px;
   width:auto;
 }
 
 .footer-svg-logo{
-  height:50px;
+  height:54px;
 }
 
 .main-nav{
@@ -92,7 +91,7 @@ svg{
 .main-nav a{
   color:#d4d8e3;
   font-size:16px;
-  font-weight:600;
+  font-weight:700;
   transition:0.25s ease;
 }
 
@@ -110,7 +109,7 @@ svg{
   min-height:56px;
   border-radius:18px;
   font-size:16px;
-  font-weight:700;
+  font-weight:800;
   color:#111;
   background:linear-gradient(135deg, #f0cf71, #d6ae3b);
   box-shadow:0 0 28px rgba(214,174,59,0.18);
@@ -131,7 +130,7 @@ svg{
   min-height:56px;
   border-radius:18px;
   font-size:16px;
-  font-weight:700;
+  font-weight:800;
   color:var(--gold);
   border:2px solid var(--gold);
   background:transparent;
@@ -143,7 +142,7 @@ svg{
   transform:translateY(-1px);
 }
 
-/* HERO */
+/* hero */
 .hero-section{
   padding:80px 0 70px;
   position:relative;
@@ -165,19 +164,19 @@ svg{
 
 .orbit-wrap{
   position:relative;
-  width:420px;
-  height:420px;
+  width:430px;
+  height:430px;
 }
 
 .main-planet{
   position:absolute;
-  width:150px;
-  height:150px;
+  width:158px;
+  height:158px;
   border-radius:50%;
-  left:120px;
-  top:120px;
-  background:radial-gradient(circle at 30% 30%, #fff0b0, #d6ae3b 55%, #a56df0 100%);
-  box-shadow:0 0 60px rgba(214,174,59,0.3);
+  left:136px;
+  top:136px;
+  background:radial-gradient(circle at 30% 30%, #fff0b0, #d6ae3b 58%, #a56df0 100%);
+  box-shadow:0 0 60px rgba(214,174,59,0.30);
 }
 
 .orbit{
@@ -187,54 +186,63 @@ svg{
 }
 
 .orbit-1{
-  width:210px;
-  height:210px;
-  left:90px;
-  top:90px;
+  width:216px;
+  height:216px;
+  left:107px;
+  top:107px;
 }
 
 .orbit-2{
-  width:290px;
-  height:290px;
-  left:50px;
-  top:50px;
+  width:296px;
+  height:296px;
+  left:67px;
+  top:67px;
 }
 
 .orbit-3{
-  width:360px;
-  height:360px;
-  left:15px;
-  top:15px;
+  width:370px;
+  height:370px;
+  left:30px;
+  top:30px;
 }
 
 .mini-dot{
   position:absolute;
   border-radius:50%;
-  box-shadow:0 0 18px rgba(255,255,255,0.18);
+  animation:floatDot 4s ease-in-out infinite;
 }
 
 .dot-1{
-  width:18px;
-  height:18px;
-  left:88px;
-  bottom:86px;
+  width:20px;
+  height:20px;
+  left:90px;
+  bottom:82px;
   background:#ffffff;
+  box-shadow:0 0 18px rgba(255,255,255,0.35);
 }
 
 .dot-2{
-  width:18px;
-  height:18px;
-  left:108px;
-  bottom:136px;
-  background:#9b4dff;
+  width:20px;
+  height:20px;
+  left:116px;
+  bottom:142px;
+  background:#8e4dff;
+  box-shadow:0 0 18px rgba(142,77,255,0.35);
 }
 
 .dot-3{
-  width:16px;
-  height:16px;
-  left:180px;
-  bottom:168px;
-  background:#e9ca63;
+  width:18px;
+  height:18px;
+  left:200px;
+  bottom:178px;
+  background:#e7ca65;
+  box-shadow:0 0 18px rgba(231,202,101,0.35);
+}
+
+@keyframes floatDot{
+  0%{ transform:translateY(0); }
+  50%{ transform:translateY(-6px); }
+  100%{ transform:translateY(0); }
 }
 
 .hero-content{
@@ -251,7 +259,7 @@ svg{
   color:var(--gold-soft);
   background:rgba(10,16,36,0.55);
   margin-bottom:24px;
-  font-weight:700;
+  font-weight:800;
   font-size:16px;
 }
 
@@ -261,7 +269,7 @@ svg{
   letter-spacing:-2.5px;
   color:var(--gold);
   margin-bottom:18px;
-  font-weight:800;
+  font-weight:900;
 }
 
 .hero-subtitle{
@@ -276,7 +284,7 @@ svg{
   line-height:1.6;
   color:var(--gold);
   margin-bottom:24px;
-  font-weight:700;
+  font-weight:800;
 }
 
 .hero-text{
@@ -297,7 +305,7 @@ svg{
   justify-content:center;
 }
 
-/* SECTIONS */
+/* sections */
 .page-section{
   padding:100px 0;
   position:relative;
@@ -308,7 +316,7 @@ svg{
 }
 
 .compact-top{
-  padding-top:40px;
+  padding-top:36px;
 }
 
 .center-text{
@@ -323,7 +331,7 @@ svg{
   font-size:64px;
   line-height:1.04;
   margin-bottom:22px;
-  font-weight:800;
+  font-weight:900;
   letter-spacing:-1.5px;
 }
 
@@ -350,34 +358,18 @@ svg{
   line-height:1.7;
 }
 
-/* MARKET STRIP */
-.market-strip{
+/* tradingview tape */
+.tv-tape-card{
   margin-top:34px;
-  display:flex;
-  gap:32px;
-  align-items:center;
-  white-space:nowrap;
-  overflow-x:auto;
-  padding:22px 26px;
-  border-radius:24px;
-  border:1px solid var(--line);
-  background:rgba(8, 14, 38, 0.68);
-  box-shadow:var(--shadow);
-  scrollbar-width:none;
+  padding:12px 18px;
+  overflow:hidden;
 }
 
-.market-strip::-webkit-scrollbar{
-  display:none;
+.market-tape-widget{
+  min-height:54px;
 }
 
-.market-strip span{
-  color:var(--gold-soft);
-  font-size:18px;
-  font-weight:700;
-  flex:0 0 auto;
-}
-
-/* CARDS */
+/* cards */
 .card-grid{
   display:grid;
   gap:28px;
@@ -435,7 +427,7 @@ svg{
   box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
-/* PRICING */
+/* pricing */
 .pricing-grid{
   align-items:stretch;
 }
@@ -449,7 +441,7 @@ svg{
   display:block;
   color:var(--gold);
   font-size:16px;
-  font-weight:800;
+  font-weight:900;
   letter-spacing:1px;
   margin-bottom:24px;
 }
@@ -472,7 +464,7 @@ svg{
   margin-bottom:10px;
 }
 
-/* CONTENT BOX */
+/* content box */
 .content-box{
   margin-top:48px;
   padding:40px 34px;
@@ -495,7 +487,7 @@ svg{
   margin-bottom:0;
 }
 
-/* CHART */
+/* chart */
 .chart-frame{
   margin-top:42px;
   padding:14px;
@@ -510,7 +502,7 @@ svg{
   background:#0b1226;
 }
 
-/* INSIGHT */
+/* insight */
 .insight-box{
   max-width:920px;
   margin:42px auto 0;
@@ -528,12 +520,12 @@ svg{
   color:var(--gold-soft);
 }
 
-/* CLOSING */
+/* closing */
 .closing-box{
   padding:56px 28px;
 }
 
-/* FOOTER */
+/* footer */
 .site-footer{
   padding:70px 0 32px;
   border-top:1px solid rgba(255,255,255,0.04);
@@ -597,7 +589,47 @@ svg{
   font-size:16px;
 }
 
-/* RESPONSIVE */
+/* floating bot */
+.floating-bot{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:1200;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 16px;
+  border-radius:999px;
+  background:linear-gradient(135deg, #101a3d, #081129);
+  border:1px solid rgba(214,174,59,0.24);
+  box-shadow:0 16px 40px rgba(0,0,0,0.35);
+  color:#fff;
+  transition:0.25s ease;
+}
+
+.floating-bot:hover{
+  transform:translateY(-2px);
+}
+
+.bot-icon{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  background:rgba(214,174,59,0.12);
+}
+
+.bot-label{
+  font-size:14px;
+  font-weight:800;
+  color:var(--gold-soft);
+  white-space:nowrap;
+}
+
+/* responsive */
 @media (max-width: 1100px){
   .hero-grid{
     grid-template-columns:1fr;
@@ -637,7 +669,7 @@ svg{
   }
 
   .zubolaa-logo{
-    height:45px;
+    height:48px;
   }
 
   .hero-title{
@@ -675,15 +707,6 @@ svg{
   .footer-brand p,
   .pricing-card li{
     font-size:16px;
-  }
-
-  .market-strip{
-    gap:18px;
-    padding:18px;
-  }
-
-  .market-strip span{
-    font-size:15px;
   }
 
   .chart-frame iframe{
@@ -750,4 +773,20 @@ svg{
     left:138px;
     bottom:130px;
   }
+
+  .floating-bot{
+    right:14px;
+    bottom:14px;
+    padding:10px 12px;
   }
+
+  .bot-icon{
+    width:38px;
+    height:38px;
+    font-size:20px;
+  }
+
+  .bot-label{
+    font-size:12px;
+  }
+}
