@@ -1257,3 +1257,42 @@ h1,h2,h3,h4,h5,h6,
   from{ transform:rotate(240deg) translateX(140px) rotate(-240deg); }
   to{ transform:rotate(600deg) translateX(140px) rotate(-600deg); }
 }
+.brand {
+  gap: 10px;
+}
+
+.better-logo {
+  width: 62px;
+  height: 62px;
+}
+
+.brand-text {
+  font-size: 1.75rem;
+}
+
+.hero-content {
+  max-width: 640px;
+}
+
+.hero-quote {
+  max-width: 560px;
+}
+
+#chart {
+  padding-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .better-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-quote {
+    max-width: 100%;
+  }
+}
