@@ -56,6 +56,51 @@ document.addEventListener("click", function (e) {
     chatBox.classList.remove("active");
   }
 });
+function toggleZubChat() {
+  const chatBox = document.getElementById("zubChatBox");
+  if (chatBox) {
+    chatBox.classList.toggle("active");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const zubBotNames = ["Zubi", "Booboo", "Zuzu", "Laddu"];
+  const randomBot = zubBotNames[Math.floor(Math.random() * zubBotNames.length)];
+
+  const botNameEl = document.getElementById("zubBotName");
+  const botWelcomeEl = document.getElementById("zubBotWelcome");
+  const yearEl = document.getElementById("year");
+
+  if (botNameEl) {
+    botNameEl.textContent = randomBot + " Assistant";
+  }
+
+  if (botWelcomeEl) {
+    botWelcomeEl.innerHTML =
+      "Hi 👋<br>I’m <strong>" + randomBot + "</strong>, your Zubolaa assistant.<br><br>" +
+      "You can explore:<br>" +
+      "• Trading Academy<br>" +
+      "• Digital Services<br>" +
+      "• Participation Program<br>" +
+      "• ZBL Token Ecosystem<br><br>" +
+      "How would you like to continue?";
+  }
+
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  document.addEventListener("click", function (event) {
+    const widget = document.querySelector(".zub-chat-widget");
+    const chatBox = document.getElementById("zubChatBox");
+    if (!widget || !chatBox) return;
+
+    const clickedInside = widget.contains(event.target);
+    if (!clickedInside && chatBox.classList.contains("active")) {
+      chatBox.classList.remove("active");
+    }
+  });
+});
 
 document.addEventListener("keydown", function (e) {
   const chatBox = document.getElementById("zubChatBox");
