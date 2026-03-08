@@ -6,6 +6,135 @@
   <title>Zubolaa | Financial Intelligence Ecosystem</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+  <!-- Zubolaa AI Assistant -->
+<div class="z-ai-widget">
+  <button class="z-ai-launcher" id="zAiLauncher" aria-label="Open Zubolaa AI Assistant">
+    <span class="z-ai-launcher-icon">🤖</span>
+    <span class="z-ai-launcher-text">Zubi AI</span>
+  </button>
+
+  <div class="z-ai-panel" id="zAiPanel">
+    <div class="z-ai-header">
+      <div class="z-ai-avatar-wrap">
+        <div class="z-ai-avatar">🤖</div>
+        <div>
+          <h4 id="assistantTitle">Zubi AI</h4>
+          <p>Your Zubolaa Assistant</p>
+        </div>
+      </div>
+      <button class="z-ai-close" id="zAiClose" aria-label="Close assistant">✕</button>
+    </div>
+
+    <div class="z-ai-section">
+      <label for="assistantName">Assistant Name</label>
+      <select id="assistantName" class="z-ai-select">
+        <option value="Zubi AI">Zubi AI</option>
+        <option value="Zuzu AI">Zuzu AI</option>
+        <option value="Booboo AI">Booboo AI</option>
+        <option value="Laddu AI">Laddu AI</option>
+      </select>
+    </div>
+
+    <div class="z-ai-section">
+      <label>Assistant Theme</label>
+      <div class="z-ai-theme-grid">
+        <button class="z-ai-theme active" data-theme="blue">Blue Glow</button>
+        <button class="z-ai-theme" data-theme="gold">Gold Glow</button>
+        <button class="z-ai-theme" data-theme="purple">Purple Glow</button>
+        <button class="z-ai-theme" data-theme="multi">Candy Glow</button>
+      </div>
+    </div>
+
+    <div class="z-ai-section">
+      <label>Quick Access</label>
+      <div class="z-ai-links">
+        <a href="about.html">About Zubolaa</a>
+        <a href="academy.html">Academy Programs</a>
+        <a href="services.html">Digital Services</a>
+        <a href="token.html">Zubolaa Token</a>
+        <a href="insights.html">Market Insights</a>
+        <a href="participation.html">Participation Program</a>
+        <a href="contact.html">Contact & Support</a>
+      </div>
+    </div>
+
+    <div class="z-ai-section">
+      <label>Assistant Actions</label>
+      <div class="z-ai-actions">
+        <button onclick="window.location.href='academy.html'">Explore Academy</button>
+        <button onclick="window.location.href='participation.html'">Join Ecosystem</button>
+        <button onclick="window.location.href='services.html'">View Services</button>
+        <button onclick="window.location.href='contact.html'">Talk to Support</button>
+      </div>
+    </div>
+
+    <div class="z-ai-section z-ai-highlight-box">
+      <strong>What I can help with</strong>
+      <ul>
+        <li>Guide visitors to Academy packages</li>
+        <li>Show Participation Program access</li>
+        <li>Redirect to Token information</li>
+        <li>Open Services and Branding pages</li>
+        <li>Take users to Contact / Support</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const launcher = document.getElementById("zAiLauncher");
+    const panel = document.getElementById("zAiPanel");
+    const closeBtn = document.getElementById("zAiClose");
+    const assistantName = document.getElementById("assistantName");
+    const assistantTitle = document.getElementById("assistantTitle");
+    const widget = document.querySelector(".z-ai-widget");
+    const themeButtons = document.querySelectorAll(".z-ai-theme");
+
+    function openPanel() {
+      panel.classList.add("active");
+    }
+
+    function closePanel() {
+      panel.classList.remove("active");
+    }
+
+    launcher.addEventListener("click", function (e) {
+      e.stopPropagation();
+      panel.classList.toggle("active");
+    });
+
+    closeBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      closePanel();
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".z-ai-widget")) {
+        closePanel();
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closePanel();
+      }
+    });
+
+    assistantName.addEventListener("change", function () {
+      assistantTitle.textContent = this.value;
+      launcher.querySelector(".z-ai-launcher-text").textContent = this.value;
+    });
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener("click", function () {
+        themeButtons.forEach(b => b.classList.remove("active"));
+        this.classList.add("active");
+        widget.setAttribute("data-theme", this.dataset.theme);
+      });
+    });
+  })();
+</script>
 <body>
 
   <!-- HEADER -->
